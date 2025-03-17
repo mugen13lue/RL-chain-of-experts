@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- Let x be the number of vans used\n- Let y be the number of trucks used\n\nExtracted Constraints:\n- Minimum pairs constraint: 50x + 100y \\geq 2000\n- Truck constraint: y \\leq x\n\nExtracted Objective:\n- Minimize the number of vans used: Minimize x", "expert": "Parameter Extractor"}

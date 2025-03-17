@@ -1,0 +1,34 @@
+```python
+import gurobipy as gp
+from gurobipy import GRB
+
+def prob_280(bus, personal_car):
+    """
+    Args:
+        bus: an integer, represents the number of buses
+        personal_car: an integer, represents the number of personal cars
+    Returns:
+        obj: an integer, the total number of vehicles
+    """
+    m = gp.Model("transportation_problem")
+
+    # Decision variables
+    x = m.addVar(vtype=GRB.INTEGER, name="bus")
+    y = m.addVar(vtype=GRB.INTEGER, name="personal_car")
+
+    # Objective function: minimize the total number of vehicles
+    m.setObjective(x + y, GRB.MINIMIZE)
+
+    # Constraints
+    m.addConstr(9*x + 4*y >= 100, "minimum_children")
+    m.addConstr(x >= y, "more_buses_than_cars")
+    m.addConstr(y >= 5, "minimum_personal_cars")
+
+    # Optimize model
+    m.optimize()
+
+    # Get the total number of vehicles
+    obj = m.objVal
+
+    return obj
+```

@@ -1,0 +1,1 @@
+{"comment": "Variables:\n- \\( x \\): number of scooters used\n- \\( y \\): number of rickshaws used\n\nConstraints:\n- Number of visitors constraint: \\( 2x + 3y \\geq 300 \\)\n- Rickshaw limit constraint: \\( y \\leq 0.4(x + y) \\)\n\nObjective:\n- Minimize \\( Z = x \\)", "expert": "Parameter Extractor"}

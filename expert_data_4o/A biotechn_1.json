@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of first-dose vaccines\n- y: number of second-dose vaccines\n\nExtracted Constraints:\n- Antibiotics: 30x + 65y \\leq 35000\n- Gelatine: 20x + 60y \\leq G\n- First-dose requirement: x \\geq y\n- Second-dose minimum: y \\geq 40\n\nExtracted Objective:\n- Minimize gelatine usage: Minimize G", "expert": "Parameter Extractor"}

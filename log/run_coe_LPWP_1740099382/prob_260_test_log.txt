@@ -1,0 +1,12 @@
+===============test sample 0===============
+Program Output:
+40
+
+Ground Truth:
+None
+Is passed: False
+
+
+
+0/1 passed
+is correct: False

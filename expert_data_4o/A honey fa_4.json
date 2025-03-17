@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of glass jars filled and y be the number of plastic jars filled.\",\n    \"CONSTRAINTS\": [\n        \"x \\geq 20\",\n        \"y \\geq 2x\",\n        \"250x + 300y \\leq 20000\"\n    ],\n    \"OBJECTIVE\": \"Maximize z = x + y\"\n}", "expert": "Modeling Expert"}

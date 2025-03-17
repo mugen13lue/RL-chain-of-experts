@@ -1,0 +1,8 @@
+===============test sample 0===============
+Runtime Error
+prob_119() got an unexpected keyword argument 'electronic_thermometer'
+
+
+
+0/1 passed
+is correct: False

@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x1 be the number of strawberry cookies and x2 be the number of sugar cookies produced\",\n    \"CONSTRAINTS\": {\n        \"Demand Constraints\": \"x1 \\leq 100, x2 \\leq 80\",\n        \"Production Constraints\": \"x1 + x2 \\leq 100\"\n    },\n    \"OBJECTIVE\": \"Maximize profit: Maximize 5.5x1 + 12x2\"\n}", "expert": "Modeling Expert"}

@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let V be the number of vans used and T be the number of trucks used, both non-negative integers\",\n    \"CONSTRAINTS\": [\n        \"V \\geq 0\",\n        \"T \\geq 0\",\n        \"V \\leq T\",\n        \"50V + 100T \\geq 2000\"\n    ],\n    \"OBJECTIVE\": \"Minimize V\"\n}", "expert": "Modeling Expert"}

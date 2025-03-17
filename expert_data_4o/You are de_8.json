@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n1. x: Number of long desks\n2. y: Number of short desks\n\nDefinitions:\n- x: Number of long desks to be purchased for the office space.\n- y: Number of short desks to be purchased for the office space.", "expert": "Parameter Extractor"}

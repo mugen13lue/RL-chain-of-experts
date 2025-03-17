@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: Number of helicopter trips\n- y: Number of truck trips\n\nDefinitions:\n- x: Number of times the farmer uses a helicopter to transport cows\n- y: Number of times the farmer uses a truck to transport cows", "expert": "Parameter Extractor"}

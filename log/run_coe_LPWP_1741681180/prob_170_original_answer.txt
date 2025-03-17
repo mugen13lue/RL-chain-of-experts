@@ -1,0 +1,34 @@
+```python
+import gurobipy as gp
+from gurobipy import GRB
+
+def prob_170(small_suitcases, large_suitcases):
+    """
+    Args:
+        small_suitcases: an integer, the number of small suitcases
+        large_suitcases: an integer, the number of large suitcases
+    Returns:
+        number_of_snacks: an integer, the maximum number of snacks that can be delivered
+    """
+    model = gp.Model("snack_delivery")
+
+    # Decision variables
+    small = model.addVar(vtype=GRB.INTEGER, name="small")
+    large = model.addVar(vtype=GRB.INTEGER, name="large")
+
+    # Objective function
+    model.setObjective(50 * small + 80 * large, sense=GRB.MAXIMIZE)
+
+    # Constraints
+    model.addConstr(small >= 2 * large)
+    model.addConstr(small + large <= 70)
+    model.addConstr(large >= 15)
+    model.addConstr(small <= small_suitcases)
+    model.addConstr(large <= large_suitcases)
+
+    model.optimize()
+
+    number_of_snacks = int(model.objVal)
+
+    return number_of_snacks
+```

@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of crab cakes eaten and y be the number of lobster rolls eaten.\",\n    \"CONSTRAINTS\": \"5x + 8y \\geq 80, 7x + 4y \\geq 100, x + y \\leq 0.4(x + y)\",\n    \"OBJECTIVE\": \"Minimize 4x + 6y\"\n}", "expert": "Modeling Expert"}

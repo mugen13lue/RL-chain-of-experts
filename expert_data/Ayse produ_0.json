@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the amount of fertilizer C in kg and y be the amount of fertilizer Y in kg\",\n    \"CONSTRAINTS\": {\n        \"Nitrous Oxide\": \"1.5x + 5y \\geq 5\",\n        \"Vitamin Mix\": \"3x + y \\geq 8\",\n        \"Non-negativity\": \"x \\geq 0, y \\geq 0\"\n    },\n    \"OBJECTIVE\": \"Minimize 2x + 3y\"\n}", "expert": "Modeling Expert"}

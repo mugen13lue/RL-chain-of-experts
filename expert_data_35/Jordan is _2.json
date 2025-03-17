@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of servings of Rice\n- y: number of servings of Kebab\n\nExtracted Constraints:\n- Calories: 300x + 200y \\geq 2200\n- Protein: 4.5x + 4y \\geq 30\n- Non-negativity: x \\geq 0, y \\geq 0\n\nExtracted Objective:\n- Minimize Cost: $3x + $2y", "expert": "Parameter Extractor"}

@@ -1,0 +1,19 @@
+from scipy.optimize import linprog
+
+def prob_206(plush_toys, dolls):
+    """
+    Args:
+        plush_toys: an integer representing the number of plush toys
+        dolls: an integer representing the number of dolls
+
+    Returns:
+        obj: an integer representing the maximum profit
+    """
+    
+    c = [-4, -2]  # Coefficients of the objective function to maximize profit
+    A = [[3, 2], [-1, 0], [0, -1], [-2, 1]]  # Coefficients of the constraints
+    b = [700, -90, 0, 0]  # Right-hand side of the constraints
+
+    res = linprog(c, A_ub=A, b_ub=b, bounds=[(90, 190), (0, None)])
+    
+    return -res.fun  # Return the negative of the optimized profit value

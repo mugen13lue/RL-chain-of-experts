@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of turkey dinners and y be the number of tuna salad sandwiches.\",\n    \"CONSTRAINTS\": [\n        \"20x + 18y \\geq 150\",\n        \"30x + 25y \\geq 200\",\n        \"x \\leq 0.4(x + y)\",\n        \"x, y \\geq 0\"\n    ],\n    \"OBJECTIVE\": \"Minimize 12x + 8y\"\n}", "expert": "Modeling Expert"}

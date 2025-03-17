@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of long cables and y be the number of short cables\",\n    \"CONSTRAINTS\": \"10x + 7y \\leq 1000, y \\geq 5x, x \\geq 10\",\n    \"OBJECTIVE\": \"Maximize profit: 12x + 5y\"\n}", "expert": "Modeling Expert"}

@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of golf carts\n- y: number of pull carts\n\nExtracted Constraints:\n- Guests Constraint: 4x + y \\geq 80\n- Golf Cart Constraint: x \\leq 0.6(x + y)\n- Non-negativity Constraint: x, y \\geq 0\n\nExtracted Objective:\n- Minimize Z = x + y", "expert": "Parameter Extractor"}

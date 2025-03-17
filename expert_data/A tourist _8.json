@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of hot air balloon rides and y be the number of gondola lift rides, both integers.\",\n    \"CONSTRAINTS\": {\n        \"Number of Visitors\": \"4x + 6y \\geq 70\",\n        \"Maximum Hot Air Balloon Rides\": \"x \\leq 10\"\n    },\n    \"OBJECTIVE\": \"Minimize 10x + 15y\"\n}", "expert": "Modeling Expert"}

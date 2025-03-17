@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of liquid hand sanitizers made and y be the number of foam hand sanitizers made, both integers.\",\n    \"CONSTRAINS\": [\n        \"40x + 60y \\leq 2000\",\n        \"50x + 40y \\leq 2100\",\n        \"x \\leq 30\",\n        \"y \\geq x\"\n    ],\n    \"OBJECTIVE\": \"Maximize 30x + 20y\"\n}", "expert": "Modeling Expert"}

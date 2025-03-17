@@ -1,0 +1,38 @@
+```python
+import gurobipy as gp
+from gurobipy import GRB
+
+def prob_90(part_time_workers, full_time_workers):
+    """
+    Args:
+        part_time_workers: an integer, the number of part time workers
+        full_time_workers: an integer, the number of full time workers
+
+    Returns:
+        full_time_scheduled: an integer, the number of full time workers to be scheduled
+        part_time_scheduled: an integer, the number of part time workers to be scheduled
+    """
+    
+    # Create a new model
+    model = gp.Model("worker_scheduling")
+    
+    # Define decision variables
+    x = model.addVar(vtype=GRB.INTEGER, name="full_time_workers")
+    y = model.addVar(vtype=GRB.INTEGER, name="part_time_workers")
+    
+    # Set objective function
+    model.setObjective(x + y, sense=GRB.MINIMIZE)
+    
+    # Add constraints
+    labor_hours_constraint = model.addConstr(8*x + 4*y == 500, "labor_hours_constraint")
+    budget_constraint = model.addConstr(300*x + 100*y <= 15000, "budget_constraint")
+    
+    # Optimize model
+    model.optimize()
+    
+    # Get the number of full time and part time workers scheduled
+    full_time_scheduled = x.x
+    part_time_scheduled = y.x
+    
+    return full_time_scheduled, part_time_scheduled
+```

@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: Number of children's vaccines\n- y: Number of adult vaccines\n\nExtracted Constraints:\n- 50x + 75y \\leq 20000\n- x \\geq 50\n- y \\geq 0.7(x + y)\n- x \\geq 0\n- y \\geq 0\n\nObjective:\n- Minimize 50x + 75y", "expert": "Parameter Extractor"}

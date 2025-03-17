@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of sets of small packets and y be the number of jugs.\",\n    \"CONSTRAINTS\": {\n        \"Constraint 1\": \"x \\geq 35\",\n        \"Constraint 2\": \"y \\geq 3x\",\n        \"Constraint 3\": \"1000x + 1250y \\leq 65000\"\n    },\n    \"OBJECTIVE\": \"Maximize Z = x + y\"\n}", "expert": "Modeling Expert"}

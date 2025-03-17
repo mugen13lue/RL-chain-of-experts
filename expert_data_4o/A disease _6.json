@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let T be the number of temperature checks performed and B be the number of blood tests conducted.\",\n    \"CONSTRAINTS\": \"1. T \\geq 5B, 2. 2T + 10B \\leq 22000, 3. B \\geq 45\",\n    \"OBJECTIVE\": \"Maximize the number of patients seen, which can be formulated as maximizing -T - B\"\n}", "expert": "Modeling Expert"}

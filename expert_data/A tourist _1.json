@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of hot air balloon rides\n- y: number of gondola lift rides\n\nDefinitions:\n- x: represents the decision variable for the number of hot air balloon rides to be taken.\n- y: represents the decision variable for the number of gondola lift rides to be taken.", "expert": "Parameter Extractor"}

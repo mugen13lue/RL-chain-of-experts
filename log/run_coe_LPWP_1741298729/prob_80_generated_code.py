@@ -1,0 +1,32 @@
+import gurobipy as gp
+from gurobipy import GRB
+
+def prob_80(regular, emergency_fire):
+    """
+    Args:
+        regular: an integer, representing the number of regular fire fighters.
+        emergency_fire: an integer, representing the number of emergency fire fighters.
+    
+    Returns:
+        obj: an integer, representing the minimum total number of fire fighters.
+    """
+    model = gp.Model("fire_fighters")
+
+    # Variables
+    R = model.addVar(vtype=GRB.INTEGER, name="regular_fire_fighters")
+    E = model.addVar(vtype=GRB.INTEGER, name="emergency_fire_fighters")
+
+    # Objective function: minimize total number of fire fighters
+    model.setObjective(R + E, sense=GRB.MINIMIZE)
+
+    # Constraints
+    model.addConstr(10*R + 6*E >= 300, "total_hours_constraint")
+    model.addConstr(300*R + 100*E <= 7000, "budget_constraint")
+
+    # Optimize model
+    model.optimize()
+
+    # Get the minimum total number of fire fighters
+    obj = model.objVal
+
+    return obj

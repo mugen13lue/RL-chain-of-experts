@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- Let x be the number of bowls of salmon\n- Let y be the number of bowls of eggs\n\nExtracted Constraints:\n- Calories: 300x + 200y \\geq 2000\n- Protein: 15x + 8y \\geq 90\n- Maximum Egg Limit: y \\leq 0.4(x)\n- Sodium: 80x + 20y \\leq S\n\nExtracted Objective:\n- Minimize S", "expert": "Parameter Extractor"}

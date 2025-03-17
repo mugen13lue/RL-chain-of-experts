@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of long desks and y be the number of short desks.\",\n    \"CONSTRAINTS\": [\n        \"The budget constraint: 300x + 100y \\leq 2000\",\n        \"The total square feet constraint: 10x + 4y \\leq 200\"\n    ],\n    \"OBJECTIVE\": \"Maximize seating availability: Maximize 6x + 2y\"\n}", "expert": "Modeling Expert"}

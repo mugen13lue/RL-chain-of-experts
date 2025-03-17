@@ -1,0 +1,30 @@
+```python
+from scipy.optimize import linprog
+
+def prob_29(regular_mix, sour_surprise_mix, constraint1, constraint2):
+    """
+    Args:
+        regular_mix: a float, the amount of regular mix candy created
+        sour_surprise_mix: a float, the amount of sour surprise mix candy created
+        constraint1: an integer, the limit of available regular candy
+        constraint2: an integer, the limit of available sour candy
+    Returns:
+        obj: a float, the maximum profit achieved
+    """
+    
+    # Coefficients of the objective function
+    c = [-3, -5]  # Coefficients for maximizing 3x + 5y
+    
+    # Coefficients of the inequality constraints
+    A = [[0.8, 0.1], [0.2, 0.9]]  # Coefficients for regular candy and sour candy constraints
+    b = [constraint1, constraint2]  # Limits of available regular and sour candy
+    
+    # Bounds for the variables
+    x_bounds = (0, None)  # x >= 0
+    y_bounds = (0, None)  # y >= 0
+    
+    # Solve the linear programming problem
+    res = linprog(c, A_ub=A, b_ub=b, bounds=[x_bounds, y_bounds], method='highs')
+    
+    return -res.fun  # Return the negative of the maximum profit achieved
+```

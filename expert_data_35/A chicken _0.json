@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of bus trips and y be the number of car trips.\",\n    \"CONSTRAINTS\": [\n        \"x \\leq 10\",\n        \"x + y \\geq 0.6 * (x + y)\",\n        \"100x + 40y \\geq 1200\"\n    ],\n    \"OBJECTIVE\": \"Minimize 2x + 1.5y\"\n}", "expert": "Modeling Expert"}

@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the amount invested in healthcare and y be the amount invested in telecom.\",\n    \"CONSTRAINS\": [\n        \"x \\geq 0\",\n        \"y \\geq 0\",\n        \"y \\geq 3x\",\n        \"y \\leq 70000\",\n        \"x + y \\leq 100000\"\n    ],\n    \"OBJECTIVE\": \"Maximize 0.01x + 0.03y\"\n}", "expert": "Modeling Expert"}

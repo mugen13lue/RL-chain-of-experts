@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of calcium pills and y be the number of vitamin D pills taken by the student.\",\n    \"CONSTRAINS\": [\n        \"x + y \\geq 130\",\n        \"y \\geq 40\",\n        \"x \\geq y\"\n    ],\n    \"OBJECTIVE\": \"Minimize 5x + 6y\"\n}", "expert": "Modeling Expert"}

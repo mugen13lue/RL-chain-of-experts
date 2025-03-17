@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: Number of high intensity drills\n- y: Number of low intensity drills\n\nDefinitions:\n- x: Number of high intensity drills to be used in the gem factory\n- y: Number of low intensity drills to be used in the gem factory", "expert": "Parameter Extractor"}

@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of packs of blueberries consumed\n- y: number of packs of strawberries consumed\n\nExtracted Constraints:\n- Anti-oxidants: 3x + y \\geq 90\n- Minerals: 5x + 7y \\geq 100\n- Strawberry ratio: y \\geq 3x\n\nExtracted Objective:\n- Minimize sugar intake: 5x + 7y", "expert": "Parameter Extractor"}

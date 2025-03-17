@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of trips made by cargo planes and y be the number of trips made by ultrawide trucks. Both x and y are non-negative integers.\",\n    \"CONSTRAINTS\": \"10x + 6y \\geq 200, 1000x + 700y \\leq 22000, x \\leq y\",\n    \"OBJECTIVE\": \"Minimize z = x + y\"\n}", "expert": "Modeling Expert"}

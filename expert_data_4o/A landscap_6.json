@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x1 be the square feet to be cut using heavy-duty yard machine and x2 be the square feet to be cut using gas lawn mower. Both x1 and x2 are non-negative integers.\",\n    \"CONSTRAINTS\": \"3x1 + 2x2 \\leq 450, 12x1 + 10x2 \\leq 2000, x1 + x2 \\leq 2500\",\n    \"OBJECTIVE\": \"Minimize 2x1 + 5x2\"\n}", "expert": "Modeling Expert"}

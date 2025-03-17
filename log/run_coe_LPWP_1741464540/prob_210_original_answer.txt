@@ -1,0 +1,24 @@
+```python
+from scipy.optimize import linprog
+
+def prob_210(light_oil, non_sticky_oil, heavy_oil):
+    """
+    Calculates the maximum net revenue for Maple Oil processing problem.
+
+    Args:
+        light_oil: an integer representing the number of tanks of light oil to process
+        non_sticky_oil: an integer representing the number of tanks of non-sticky oil to process
+        heavy_oil: an integer representing the number of tanks of heavy oil to process
+
+    Returns:
+        obj: an integer representing the maximum net revenue
+    """
+    c = [-550, -750, -950]  # Coefficients of the objective function to maximize
+    A = [[3, 6, 9], [3, 2, 3]]  # Coefficients of the inequality constraints
+    b = [250, 150]  # Right-hand side of the inequality constraints
+    bounds = [(0, None), (0, None), (0, None)]  # Bounds for the variables x1, x2, x3
+
+    res = linprog(c, A_ub=A, b_ub=b, bounds=bounds, method='highs')
+
+    return -res.fun  # Return the maximum net revenue (negative of the minimized value)
+```

@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of pills of supplement A and y be the number of pills of supplement B\",\n    \"CONSTRAINTS\": {\n        \"Iron\": \"5x + 4y \\geq 40\",\n        \"Calcium\": \"10x + 15y \\geq 50\",\n        \"Non-negativity\": \"x \\geq 0, y \\geq 0\"\n    },\n    \"OBJECTIVE\": \"Minimize 2x + 3y\"\n}", "expert": "Modeling Expert"}

@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the amount of sulfate to be added to the shampoo and y be the amount of ginger to be added to the shampoo.\",\n    \"CONSTRAINTS\": [\n        \"x \\geq 100\",\n        \"x + y \\leq 400\",\n        \"x \\leq 2y\"\n    ],\n    \"OBJECTIVE\": \"Minimize 0.5x + 0.75y\"\n}", "expert": "Modeling Expert"}

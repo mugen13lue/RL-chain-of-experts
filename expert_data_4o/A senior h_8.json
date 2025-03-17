@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of cups of spinach and y be the number of cups of soybeans, both integers\",\n    \"CONSTRAINTS\": \"100x + 80y \\geq 12000, 5x + 12y \\geq 300, x \\geq y\",\n    \"OBJECTIVE\": \"Maximize: 30x + 100y\"\n}", "expert": "Modeling Expert"}

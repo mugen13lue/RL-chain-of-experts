@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of miter saws purchased\n- y: number of circular saws purchased\n\nExtracted Constraints:\n1. 50x + 70y \\geq 1500 (cut at least 1500 planks of wood per day)\n2. 60x + 100y \\leq 2000 (produce at most 2000 units of sawdust per day)\n\nObjective Function:\nminimize x + y (total number of saws)", "expert": "Parameter Extractor"}

@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of servings of Rice and y be the number of servings of Kebab, both non-negative integers\",\n    \"CONSTRAINTS\": \"300x + 200y \\geq 2200, 4.5x + 4y \\geq 30, x, y \\geq 0\",\n    \"OBJECTIVE\": \"Minimize the total cost of the diet: 3x + 2y\"\n}", "expert": "Modeling Expert"}

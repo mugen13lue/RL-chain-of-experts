@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of trips by vans\n- y: number of trips by trucks\n\nDefinitions:\n- x: number of trips by vans\n- y: number of trips by trucks\n\nConstraints:\n- x \\geq 0\n- y \\geq 0\n- 50x + 80y \\geq 1500\n- 30x + 50y \\leq 1000\n- x \\geq y\n\nObjective:\n- Minimize Z = x + y", "expert": "Parameter Extractor"}

@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of small suitcases and y be the number of large suitcases\",\n    \"CONSTRAINTS\": \"1. x \\geq 2y, 2. x \\leq 70, 3. y \\leq 50, 4. y \\geq 15, 5. x + y \\leq 70\",\n    \"OBJECTIVE\": \"Maximize 50x + 80y\"\n}", "expert": "Modeling Expert"}

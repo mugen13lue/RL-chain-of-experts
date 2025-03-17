@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of units of chemical A and y be the number of units of chemical B added to the mixer.\",\n    \"CONSTRAINTS\": [\n        \"x \\geq 300\",\n        \"x \\leq 3y\",\n        \"x + y \\geq 1500\"\n    ],\n    \"OBJECTIVE\": \"Minimize the total time: 30x + 45y\"\n}", "expert": "Modeling Expert"}

@@ -1,0 +1,33 @@
+from scipy.optimize import linprog
+
+def prob_3(apples, pears, constraint1, constraint2, constraint3, constraint4):
+    """
+    Args:
+        apples: an integer - number of acres of apples to grow
+        pears: an integer - number of acres of pears to grow
+        constraint1: an integer - total available land in acres
+        constraint2: an integer - minimum required acres of apples
+        constraint3: an integer - minimum required acres of pears
+        constraint4: a boolean - whether the pears should be at most twice the apples or not
+    Returns:
+        obj: an integer - optimal profit
+    """
+    
+    # Coefficients of the objective function (profit)
+    c = [-2, -4]  # profit per apple and pear
+    
+    # Coefficients of the inequality constraints
+    A = [[1, 1], [0, 1]]
+    b = [constraint1, 2*apples] if constraint4 else [constraint1, 0]
+    
+    # Coefficients of the equality constraints
+    A_eq = [[1, 0], [0, 1]]
+    b_eq = [constraint2, constraint3]
+    
+    # Bounds for the variables (apples and pears)
+    x_bounds = (0, None)
+    
+    # Solve the linear programming problem
+    res = linprog(c, A_ub=A, b_ub=b, A_eq=A_eq, b_eq=b_eq, bounds=[x_bounds, x_bounds], method='highs')
+    
+    return -res.fun  # optimal profit

@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of servings of almonds\n- y: number of servings of cashews\n\nConstraints:\n- 200x + 300y \\geq 10000 (Calorie constraint)\n- 20x + 25y \\geq 800 (Protein constraint)\n- x \\geq 2y (Servings constraint)\n\nObjective:\n- Minimize 15x + 12y (Fat intake)", "expert": "Parameter Extractor"}

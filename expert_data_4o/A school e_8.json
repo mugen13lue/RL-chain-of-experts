@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- staff_teachers: number of staff teachers (x)\n- substitute_teachers: number of substitute teachers (y)\n- requires_constraint: number of teaching availability required (1000 hours)\n- budget_constraint: budget limit ($40000)", "expert": "Parameter Extractor"}

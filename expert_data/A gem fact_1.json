@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of high intensity drills\n- y: number of low intensity drills\n\nDefinitions:\n- x: number of high intensity drills to be used\n- y: number of low intensity drills to be used", "expert": "Parameter Extractor"}

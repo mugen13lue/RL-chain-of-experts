@@ -1,0 +1,35 @@
+from gurobipy import *
+
+def prob_20(banana_haters_package, combo_package):
+    """
+    Args:
+        banana_haters_package: an integer representing the quantity of banana-haters packages
+        combo_package: an integer representing the quantity of combo packages
+    Returns:
+        obj: an integer representing the maximum net profit
+    """
+    
+    # Create a new model
+    m = Model("StoreLiquidation")
+    
+    # Define decision variables
+    x = m.addVar(vtype=GRB.INTEGER, name="banana_haters_package")
+    y = m.addVar(vtype=GRB.INTEGER, name="combo_package")
+    
+    # Set objective function
+    m.setObjective(6*x + 7*y, GRB.MAXIMIZE)
+    
+    # Add constraints
+    m.addConstr(6*x <= 10, "apple_constraint")
+    m.addConstr(30*x <= 80, "grape_constraint")
+    m.addConstr(5*y <= 10, "apple_combo_constraint")
+    m.addConstr(6*y <= 20, "banana_combo_constraint")
+    m.addConstr(20*y <= 80, "grape_combo_constraint")
+    
+    # Optimize the model
+    m.optimize()
+    
+    # Get the maximum profit
+    obj = m.objVal
+    
+    return obj

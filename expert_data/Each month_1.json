@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of carrots sold\n- y: number of cucumbers sold\n\nExtracted Constraints:\n- Budget Constraint: 0.3x + 0.5y \u2264 500\n- Number of Cucumbers Constraint: y \u2264 1/3x\n- Number of Carrots Sold Constraint: 300 \u2264 x \u2264 500\n\nExtracted Objective:\n- Maximize 0.75x + 0.8y", "expert": "Parameter Extractor"}

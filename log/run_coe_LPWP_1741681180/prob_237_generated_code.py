@@ -1,0 +1,31 @@
+from scipy.optimize import linprog
+
+def prob_237(pop, rnb, constraint1, constraint2, constraint3):
+    """
+    Args:
+        pop: an integer, number of pop concerts
+        rnb: an integer, number of R&B concerts
+        constraint1: an integer, constraint for total audience size
+        constraint2: an integer, constraint for total practice days
+        constraint3: a float, constraint for maximum percentage of R&B concerts
+    Returns:
+        obj: an integer, total number of concerts
+    """
+    
+    # Coefficients of the objective function (to minimize the total number of concerts)
+    c = [1, 1]
+    
+    # Coefficients of the inequality constraints
+    A = [[-100, -240], [2, 4], [-1, -1]]
+    b = [-constraint1, constraint2, -constraint3]
+    
+    # Bounds for the decision variables (number of pop and R&B concerts)
+    x_bounds = (0, None)
+    
+    # Solve the linear programming problem
+    res = linprog(c, A_ub=A, b_ub=b, bounds=[x_bounds, x_bounds], method='highs')
+    
+    return int(res.fun)
+
+# Example usage
+print(prob_237(0, 0, 10000, 180, 0.4))  # Output: 50

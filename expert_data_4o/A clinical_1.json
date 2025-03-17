@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of hours the northern factory is run and y be the number of hours the western factory is run.\",\n    \"CONSTRAINTS\": \"800x + 650y \\geq 800000, 700x + 750y \\geq 700000, 40x + 35y \\leq 60000, x \\geq 0, y \\geq 0\",\n    \"OBJECTIVE\": \"Minimize Z = x + y\"\n}", "expert": "Modeling Expert"}

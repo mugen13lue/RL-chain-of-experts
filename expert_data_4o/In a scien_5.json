@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: Number of tables set up at table 1\n- y: Number of tables set up at table 2\n\nConstraints:\n- 3x + 8y \u2264 100 (Powder constraint)\n- 5x + 6y \u2264 90 (Glue constraint)\n- 2x + 4y \u2264 30 (Mess constraint)\n\nObjective:\n- Maximize 4x + 5y (Slime production)", "expert": "Parameter Extractor"}

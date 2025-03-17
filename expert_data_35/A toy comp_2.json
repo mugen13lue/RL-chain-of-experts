@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of medium sized factories\n- y: number of small factories\n\nExtracted Constraints:\n- Toy Production: 50x + 35y \\geq 250\n- Operator Constraint: 3x + 2y \\leq 16\n- Non-negativity: x, y \\geq 0\n\nExtracted Objective:\n- Minimize Z = x + y", "expert": "Parameter Extractor"}

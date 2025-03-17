@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of small butcher shops to build\n- y: number of large butcher shops to build\n\nDefinitions:\n- x: decision variable representing the number of small butcher shops to build\n- y: decision variable representing the number of large butcher shops to build", "expert": "Parameter Extractor"}

@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of milk chocolate bars and y be the number of dark chocolate bars.\",\n    \"CONSTRAINTS\": {\n        \"Cocoa\": \"4x + 6y \\leq 2000\",\n        \"Milk\": \"7x + 3y \\leq 1750\",\n        \"Milk Chocolate Ratio\": \"x \\geq 2y\"\n    },\n    \"OBJECTIVE\": \"Minimize 15x + 12y\"\n}", "expert": "Modeling Expert"}

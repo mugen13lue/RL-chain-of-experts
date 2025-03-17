@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of chocolate crepes made and y be the number of peanut butter crepes made. Both x and y are non-negative integers.\",\n    \"CONSTRAINTS\": \"3x + 4y \\leq 400, 6x + 7y \\leq 450, y \\geq x, x \\geq 0.25(x+y), x is an integer, y is an integer\",\n    \"OBJECTIVE\": \"Minimize Z = 6x + 7y\"\n}", "expert": "Modeling Expert"}

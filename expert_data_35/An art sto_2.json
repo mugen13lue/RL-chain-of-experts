@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of large art pieces\n- y: number of small art pieces\n\nExtracted Constraints:\n- Paint: 4x + 2y \\leq 100\n- Glitter: 3x + y \\leq 50\n- Glue: 5x + 2y \\leq 70\n- Minimum Large Art Pieces: x \\geq 5\n- Minimum Small Art Pieces: y \\geq 5\n\nExtracted Objective:\n- Maximize 30x + 15y", "expert": "Parameter Extractor"}

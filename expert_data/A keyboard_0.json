@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of mechanical keyboards and y be the number of standard keyboards.\",\n    \"CONSTRAINTS\": [\n        \"5x - 2y \\leq 0\",\n        \"2x - y \\leq 0\",\n        \"y \\geq 30\",\n        \"5x + 2y \\leq 1000\",\n        \"2x + y \\leq 250\"\n    ],\n    \"OBJECTIVE\": \"Maximize Z = x + y\"\n}", "expert": "Modeling Expert"}

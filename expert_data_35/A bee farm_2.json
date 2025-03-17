@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of small bottles\n- y: number of large bottles\n\nExtracted Constraints:\n1. x \\geq 0\n2. y \\geq 0\n3. 5x + 20y \\leq 200\n4. x \\leq 300\n5. y \\leq 100\n6. x \\geq 2y\n7. y \\geq 50\n\nExtracted Objective:\n- Maximize Z = 5x + 20y", "expert": "Parameter Extractor"}

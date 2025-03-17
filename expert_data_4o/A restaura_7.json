@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x1 be the number of original meals and x2 be the number of experimental meals pushed for by the waiting staff.\",\n    \"CONSTRAINTS\": \"20*x1 + 25*x2 <= 800, 45*x1 + 35*x2 <= 900\",\n    \"OBJECTIVE\": \"Minimize 10*x1 + 15*x2, representing the minimized cooking time.\"\n}", "expert": "Modeling Expert"}

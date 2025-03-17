@@ -1,0 +1,1 @@
+{"comment": "Variables:\n- x: sq. feet allocated for phone production\n- y: sq. feet allocated for laptop production\n\nConstraints:\n- Space Constraint: x + y \u2264 100\n- Labor Constraint: 2x + 3y \u2264 2000\n- Budget Constraint: 12x + 15y \u2264 5000\n- Non-negativity Constraint: x \u2265 0, y \u2265 0\n\nObjective:\n- Maximize 50x + 70y", "expert": "Parameter Extractor"}

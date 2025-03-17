@@ -1,0 +1,1 @@
+{"comment": "Variables:\n- x: number of labradors\n- y: number of golden retrievers\n\nConstraints:\n- 5x + 6y \\leq 1500\n- y \\geq 50\n- x \\leq 0.6(x+y)\n\nObjective:\n- Maximize 7x + 10y", "expert": "Parameter Extractor"}

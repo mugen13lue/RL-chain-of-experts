@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of premium printers\n- y: number of regular printers\n\nDefinitions:\n- x: represents the number of premium printers to be bought\n- y: represents the number of regular printers to be bought", "expert": "Parameter Extractor"}

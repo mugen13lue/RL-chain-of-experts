@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: Number of 4-wheeler vehicles\n- y: Number of 3-wheeler vehicles\n\nExtracted Constraints:\n- 60x + 40y \\geq 1000\n- 30x + 15y \\leq 430\n\nExtracted Objective:\n- Minimize z = x + y", "expert": "Parameter Extractor"}

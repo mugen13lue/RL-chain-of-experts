@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of wraps to be made\n- y: number of platters to be made\n\nExtracted Constraints:\n- Meat: 5x + 7y \\geq 3000\n- Rice: 3x + 5y \\geq 2500\n- Wraps_Platters_Ratio: x \\geq 3y\n\nExtracted Objective:\n- Minimize Z = 10x + 8y", "expert": "Parameter Extractor"}

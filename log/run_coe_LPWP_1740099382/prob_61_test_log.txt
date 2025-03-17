@@ -1,0 +1,8 @@
+===============test sample 0===============
+Runtime Error
+prob_61() got an unexpected keyword argument 'new_model'
+
+
+
+0/1 passed
+is correct: False

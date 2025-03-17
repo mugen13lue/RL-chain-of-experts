@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the kg of cat paw snacks in the first mix and y be the kg of gold shark snacks in the first mix\",\n    \"CONSTRAINTS\": [\n        \"0.2x + 0.8y \\leq 20\",\n        \"0.35x + 0.65y \\leq 50\",\n        \"x \\geq 0\",\n        \"y \\geq 0\"\n    ],\n    \"OBJECTIVE\": \"Maximize 12x + 15y\"\n}", "expert": "Modeling Expert"}

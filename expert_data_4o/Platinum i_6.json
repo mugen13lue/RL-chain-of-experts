@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: Number of palladium-heavy catalysts used\n- y: Number of platinum-heavy catalysts used\n\nDefinitions:\n- x, y: Non-negative integers representing the quantities of palladium-heavy and platinum-heavy catalysts used, respectively.", "expert": "Parameter Extractor"}

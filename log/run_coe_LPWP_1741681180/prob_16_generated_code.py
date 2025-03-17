@@ -1,0 +1,18 @@
+from scipy.optimize import linprog
+
+def prob_16():
+    c = [-400000, -5000, -3000]  # Coefficients of the objective function to maximize total audience
+
+    A = [[1000, 200, 100],  # Cost constraints
+         [-1, 0, 0],  # Z-tube lower bound constraint
+         [0, -1, 0],  # Soorchle lower bound constraint
+         [0, 0, -1],  # Wassa lower bound constraint
+         [1, 1, 1],  # Total number of ads constraint
+         [0, 0, 1],  # Wassa upper bound constraint
+         [-1, -1, 0]]  # Z-tube lower bound constraint
+
+    b = [10000, 0, 0, 0, 15, 10000/3, 0]  # Right-hand side of constraints
+
+    res = linprog(c, A_ub=A, b_ub=b, method='highs')
+
+    return int(-res.fun)  # Return the maximized total audience

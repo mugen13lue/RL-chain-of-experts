@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": {\n        \"x\": \"number of wide trails\",\n        \"y\": \"number of narrow trails\"\n    },\n    \"CONSTRAINTS\": [\n        \"x \\leq 3\",\n        \"x + y \\leq 225\"\n    ],\n    \"OBJECTIVE\": \"Minimize 6x + 3y\"\n}", "expert": "Parameter Extractor"}

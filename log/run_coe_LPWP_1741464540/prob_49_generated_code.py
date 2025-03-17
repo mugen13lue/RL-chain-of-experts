@@ -1,0 +1,33 @@
+from scipy.optimize import linprog
+
+def prob_49(turnips, pumpkins):
+    """
+    Args:
+        turnips: an integer, represents the number of turnips to grow
+        pumpkins: an integer, represents the number of pumpkins to grow
+        
+    Returns:
+        obj: an integer, represents the objective value (revenue) to maximize
+    """
+    # Coefficients of the objective function to maximize revenue
+    c = [-300, -450]  # Negative because linprog minimizes by default
+
+    # Coefficients of the inequality constraints
+    A = [[50, 90], [80, 50]]
+    b = [40000, 34000]
+
+    # Bounds for the variables x (turnips) and y (pumpkins)
+    x_bounds = (0, None)
+    y_bounds = (0, None)
+
+    # Solve the linear programming problem
+    res = linprog(c, A_ub=A, b_ub=b, bounds=[x_bounds, y_bounds], method='highs')
+
+    # Extract the optimal values of x and y
+    optimal_turnips = res.x[0]
+    optimal_pumpkins = res.x[1]
+
+    # Calculate the maximum revenue
+    max_revenue = -res.fun  # Multiply by -1 to get the actual maximum revenue
+
+    return max_revenue

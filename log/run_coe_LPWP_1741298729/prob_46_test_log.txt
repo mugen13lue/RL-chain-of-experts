@@ -1,0 +1,8 @@
+===============test sample 0===============
+Runtime Error
+prob_46() got an unexpected keyword argument 'vegetable'
+
+
+
+0/1 passed
+is correct: False

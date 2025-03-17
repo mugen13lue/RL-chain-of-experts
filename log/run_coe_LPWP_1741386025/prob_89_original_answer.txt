@@ -1,0 +1,29 @@
+```python
+from scipy.optimize import linprog
+
+def prob_89(goat, chicken, goat_meat, goat_base, chicken_meat, chicken_base):
+    """
+    Args:
+        goat: an integer, number of goat curry bowls
+        chicken: an integer, number of chicken curry bowls
+        goat_meat: an integer, units of goat meat required per bowl of goat curry
+        goat_base: an integer, units of curry base required per bowl of goat curry
+        chicken_meat: an integer, units of chicken meat required per bowl of chicken curry
+        chicken_base: an integer, units of curry base required per bowl of chicken curry
+    Returns:
+        obj: an integer, total amount of curry base used
+    """
+    c = [goat_base, chicken_base]  # Coefficients of the objective function to minimize curry base used
+    A = [[goat_meat, 0], [0, chicken_meat], [-0.25, -0.25], [1, -1]]  # Coefficients of the constraints
+    b = [goat * goat_meat, chicken * chicken_meat, 0, 0]  # Right-hand side of the constraints
+
+    res = linprog(c, A_ub=A, b_ub=b, bounds=(0, None))
+
+    if res.success:
+        x = int(res.x[0])  # Number of bowls of goat curry
+        y = int(res.x[1])  # Number of bowls of chicken curry
+        total_base = c[0] * x + c[1] * y  # Total amount of curry base used
+        return total_base
+    else:
+        return "No feasible solution found."
+```

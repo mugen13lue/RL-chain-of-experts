@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of carrots sold and y be the number of cucumbers sold\",\n    \"CONSTRAINTS\": [\n        \"0.30x + 0.50y \\leq 500\",\n        \"y \\leq x/3\",\n        \"300 \\leq x \\leq 500\",\n        \"x, y \\geq 0\"\n    ],\n    \"OBJECTIVE\": \"Maximize 0.75x + 0.80y\"\n}", "expert": "Modeling Expert"}

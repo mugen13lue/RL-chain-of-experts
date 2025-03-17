@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- \\( x \\): Number of vans\n- \\( y \\): Number of cars\n\nDefinitions:\n- \\( x \\): Number of vans to be used for transporting voters to the polls\n- \\( y \\): Number of cars to be used for transporting voters to the polls", "expert": "Parameter Extractor"}

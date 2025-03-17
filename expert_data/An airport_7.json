@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of 4-wheeler vehicles and y be the number of 3-wheeler vehicles, both non-negative integers.\",\n    \"CONSTRAINTS\": {\n        \"Luggage Constraint\": \"60x + 40y \\geq 1000\",\n        \"Pollutant Constraint\": \"30x + 15y \\leq 430\"\n    },\n    \"OBJECTIVE\": \"Minimize Z = x + y\"\n}", "expert": "Modeling Expert"}

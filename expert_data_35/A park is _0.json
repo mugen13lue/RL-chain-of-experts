@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of wide trails and y be the number of narrow trails.\",\n    \"CONSTRAINTS\": {\n        \"Trail Capacity\": \"x \\leq 3\",\n        \"Visitor Limit\": \"50x + 20y \\leq 225\",\n        \"Non-negativity\": \"x \\geq 0, y \\geq 0\"\n    },\n    \"OBJECTIVE\": \"Minimize 6x + 3y\"\n}", "expert": "Modeling Expert"}

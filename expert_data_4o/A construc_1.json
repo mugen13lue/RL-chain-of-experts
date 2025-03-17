@@ -1,0 +1,1 @@
+{"comment": "Variables:\n- x: number of cows\n- y: number of elephants\n\nConstraints:\n1. x \\geq 0\n2. y \\geq 0\n3. 20x + 50y \\geq 1000\n4. y \\leq x\n5. x \\leq 2y\n\nObjective:\nMinimize z = x + y", "expert": "Parameter Extractor"}

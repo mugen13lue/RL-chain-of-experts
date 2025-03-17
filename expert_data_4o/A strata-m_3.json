@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of low-powered air conditioners\n- y: number of high-powered air conditioners\n\nExtracted Constraints:\n- 12x + 17y \\geq 250\n- 150x + 250y \\leq 3400\n- x \\leq 0.3(x + y)\n- y \\geq 7\n\nExtracted Objective:\n- Minimize the total number of air conditioners: x + y", "expert": "Parameter Extractor"}

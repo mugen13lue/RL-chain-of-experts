@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x1 be the number of sedans purchased and x2 be the number of buses purchased, both integers.\",\n    \"CONSTRAINTS\": \"10*x1 + 40*x2 \\leq 800 (Pollution constraint), 50*x1 + 250*x2 \\geq 4600 (Customer constraint)\",\n    \"OBJECTIVE\": \"Minimize Z = x1 + x2\"\n}", "expert": "Modeling Expert"}

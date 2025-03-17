@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of packs of peach flavored candy\n- y: number of packs of cherry flavored candy\n\nExtracted Constraints:\n- Peach Flavoring: 3x \\leq 3000\n- Cherry Flavoring: 5y \\leq 4000\n- Peach Must Be More Popular: x \\geq y\n- At Least 30% Cherry: y \\geq 0.3(x+y)\n\nExtracted Objective:\n- Minimize 5x + 4y", "expert": "Parameter Extractor"}

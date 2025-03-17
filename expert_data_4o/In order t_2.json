@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of processes with a catalyst and y be the number of processes without a catalyst. Both x and y are non-negative integers.\",\n    \"CONSTRAINTS\": \"10x + 15y <= 300, 20x + 12y <= 300, x >= 0, y >= 0\",\n    \"OBJECTIVE\": \"Maximize: 15x + 18y (carbon dioxide produced)\"\n}", "expert": "Modeling Expert"}

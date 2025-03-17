@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of daytime pills\n- y: number of nighttime pills\n\nExtracted Constraints:\n- Painkiller: 6x + 5y \\leq 800\n- SleepMedicine: 2x + 5y \\leq M\n- DaytimePercentage: x \\geq 0.4(x+y)\n- NighttimeMinimum: y \\geq 200\n\nExtracted Objective:\n- Minimize Z = 2x + 5y", "expert": "Parameter Extractor"}

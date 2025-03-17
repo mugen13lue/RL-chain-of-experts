@@ -1,0 +1,1 @@
+{"comment": "Makespan:The total time taken to complete all jobs on all machines in the series.\nProcessing Order:The specific sequence in which jobs are processed on machines, from machine 1 to machine M.\nParallel Processing:The ability of machines to work simultaneously on different jobs, allowing for more efficient processing.\n", "expert": "Terminology Interpreter"}

@@ -1,0 +1,10 @@
+from scipy.optimize import linprog
+
+def prob_18(Feed_A, Feed_B):
+    c = [100, 80]  # Cost coefficients
+    A = [[-10, -7], [-8, -15]]  # Coefficients of constraints
+    b = [-30, -50]  # Right-hand side of constraints
+    bounds = [(0, None), (0, None)]  # Bounds for variables x and y
+
+    res = linprog(c, A_ub=A, b_ub=b, bounds=bounds, method='highs')
+    return int(res.fun)

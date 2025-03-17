@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of submarine trips and y be the number of boat trips. Both x and y are non-negative integers.\",\n    \"CONSTRAINTS\": \"100x + 80y \\geq 1000, x \\leq 6, y \\geq 0.5(x+y)\",\n    \"OBJECTIVE\": \"Minimize Z = 30x + 25y, where Z represents the total amount of gas used.\"\n}", "expert": "Modeling Expert"}

@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x1 be the number of brownies made and x2 be the number of lemon squares made, both integers\",\n    \"CONSTRAINTS\": \"5x1 + 7x2 \\leq 2500, 4x1 + 6x2 \\leq 3300, x1 \\leq 0.4(x1 + x2)\",\n    \"OBJECTIVE\": \"Minimize 4x1 + 6x2\"\n}", "expert": "Modeling Expert"}

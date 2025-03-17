@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of original combos\n- y: number of experimental combos\n\nExtracted Constraints:\n- Food Waste Constraint: 20x + 25y \\leq 800\n- Wrapping Waste Constraint: 45x + 35y \\leq 900\n- Non-negativity Constraint: x \\geq 0, y \\geq 0\n\nExtracted Objective:\n- Minimize Z = 10x + 15y", "expert": "Parameter Extractor"}

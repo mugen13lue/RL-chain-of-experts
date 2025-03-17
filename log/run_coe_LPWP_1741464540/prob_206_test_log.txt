@@ -1,0 +1,8 @@
+===============test sample 0===============
+Runtime Error
+prob_206() got an unexpected keyword argument 'plush_toys'
+
+
+
+0/1 passed
+is correct: False

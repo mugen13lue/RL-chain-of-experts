@@ -1,0 +1,32 @@
+```python
+from gurobipy import *
+
+def prob_190(small_crates, large_crates):
+    """
+    Args:
+        small_crates: an integer (number of small crates),
+        large_crates: an integer (number of large crates)
+
+    Returns:
+        obj: an integer (total number of grapes)
+    """
+    m = Model()
+
+    # Decision variables
+    s = m.addVar(vtype=GRB.INTEGER, lb=0, ub=small_crates, name="small_crates")
+    l = m.addVar(vtype=GRB.INTEGER, lb=0, ub=large_crates, name="large_crates")
+
+    # Objective function
+    m.setObjective(200*s + 500*l, sense=GRB.MAXIMIZE)
+
+    # Constraints
+    m.addConstr(s >= 3*l)
+    m.addConstr(s <= 100)
+    m.addConstr(l <= 50)
+    m.addConstr(s + l <= 60)
+    m.addConstr(l >= 10)
+
+    m.optimize()
+
+    return int(m.objVal)
+```

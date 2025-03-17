@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of small butcher shops and y be the number of large butcher shops, both integers.\",\n    \"CONSTRAINTS\": [\n        \"30x + 70y \\geq 500\",\n        \"2x + 4y \\leq 30\",\n        \"x \\geq 0\",\n        \"y \\geq 0\"\n    ],\n    \"OBJECTIVE\": \"Minimize Z = x + y\"\n}", "expert": "Modeling Expert"}

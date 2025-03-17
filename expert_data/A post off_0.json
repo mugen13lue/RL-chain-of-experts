@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of dual model stamping machines and y be the number of single model stamping machines.\",\n    \"CONSTRAINTS\": [\n        \"50x + 30y \\geq 300\",\n        \"20x + 15y \\leq 135\",\n        \"y \\geq x\",\n        \"x, y \\geq 0\"\n    ],\n    \"OBJECTIVE\": \"Minimize Z = x + y\"\n}", "expert": "Modeling Expert"}

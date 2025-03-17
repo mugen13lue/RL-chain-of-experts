@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of bags of regular brand\n- y: number of bags of premium brand\n\nExtracted Constraints:\n- Calcium: 4x + 12y \\geq 15\n- Vitamin Mix: 7x + 10y \\geq 20\n- Protein: 10x + 16y \\geq 20\n- Non-negativity: x \\geq 0, y \\geq 0\n\nExtracted Objective:\n- Minimize Cost: $20x + $35y", "expert": "Parameter Extractor"}

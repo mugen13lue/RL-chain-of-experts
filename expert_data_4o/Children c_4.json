@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of vans used\n- y: number of minibuses used\n\nExtracted Constraints:\n- Total kids constraint: 6x + 10y \\geq 150\n- Minibus limit constraint: y \\leq 10\n- Vans must exceed minibuses constraint: x \\geq y\n\nExtracted Objective:\n- Minimize 7x + 10y", "expert": "Parameter Extractor"}

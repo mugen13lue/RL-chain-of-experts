@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of radio ads\n- y: number of social media ads\n\nExtracted Constraints:\n- Budget: 5000x + 9150y \\leq 250000\n- Minimum Radio Ads: x \\geq 15\n- Maximum Radio Ads: x \\leq 40\n- Minimum Social Media Ads: y \\geq 35\n\nExtracted Objective:\n- Maximize 60500x + 50000y", "expert": "Parameter Extractor"}

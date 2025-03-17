@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of orange juice boxes and y be the number of apple juice boxes.\",\n    \"CONSTRAINTS\": \"The constraints are: x \\geq 3, y \\geq 3, 8x + 6y \\leq 300, y \\geq 3x.\",\n    \"OBJECTIVE\": \"Maximize the objective function: 10x + 12y.\"\n}", "expert": "Modeling Expert"}

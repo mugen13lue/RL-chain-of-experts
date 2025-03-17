@@ -1,0 +1,32 @@
+```python
+import gurobipy as gp
+from gurobipy import GRB
+
+def prob_77(dual, single):
+    """
+    Args:
+        dual: an integer, representing the number of dual model stamping machines
+        single: an integer, representing the number of single model stamping machines
+    Returns:
+        obj: an integer, representing the total number of stamping machines
+    """
+    m = gp.Model("stamp_machines")
+
+    # Decision variables
+    x = m.addVar(vtype=GRB.INTEGER, name="dual_machines")
+    y = m.addVar(vtype=GRB.INTEGER, name="single_machines")
+
+    # Constraints
+    m.addConstr(50*x + 30*y >= 300)
+    m.addConstr(20*x + 15*y <= 135)
+    m.addConstr(y >= x)
+
+    # Objective
+    m.setObjective(x + y, GRB.MINIMIZE)
+
+    # Optimize model
+    m.optimize()
+
+    return int(x.x), int(y.x)
+```
+The final code utilizes the Gurobi optimization library to solve the problem of determining the optimal number of dual and single model stamping machines to purchase in order to minimize the total number of stamping machines while meeting the constraints of minimum letters stamped per minute and maximum glue used per minute. The function `prob_77` takes the number of dual and single model stamping machines as input and returns the optimal solution.

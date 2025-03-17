@@ -1,0 +1,34 @@
+import gurobipy as gp
+from gurobipy import GRB
+
+def prob_265(golf_carts, pull_carts):
+    """
+    Args:
+        golf_carts: an integer, number of golf carts
+        pull_carts: an integer, number of pull carts
+    Returns:
+        obj: an integer, the objective value
+    """
+    # Create a new model
+    model = gp.Model("cart_transportation")
+
+    # Define decision variables
+    x = model.addVar(lb=0, vtype=GRB.INTEGER, name="x")  # number of golf carts
+    y = model.addVar(lb=0, vtype=GRB.INTEGER, name="y")  # number of pull carts
+
+    # Set objective function
+    model.setObjective(x + y, sense=GRB.MINIMIZE)
+
+    # Add constraints
+    model.addConstr(x + y >= 80, "guest_constraint")  # Corrected constraint for minimum number of guests
+    model.addConstr(x <= 0.6 * (x + y), "golf_cart_constraint")  # Constraint for maximum percentage of golf carts
+    model.addConstr(x >= 0, "non_negativity_x")  # Non-negativity constraint for x
+    model.addConstr(y >= 0, "non_negativity_y")  # Non-negativity constraint for y
+
+    # Optimize model
+    model.optimize()
+
+    # Get the optimal objective value
+    obj = model.objVal
+
+    return obj

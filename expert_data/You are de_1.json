@@ -1,0 +1,1 @@
+{"comment": "Variables:\n- x: number of long desks\n- y: number of short desks\n\nConstraints:\n- Budget: 300x + 100y \\leq 2000\n- Space: 10x + 4y \\leq 200\n- Non-negativity: x \\geq 0, y \\geq 0\n\nObjective:\n- Maximize 6x + 2y", "expert": "Parameter Extractor"}

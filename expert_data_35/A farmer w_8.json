@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the amount of Feed A in kilograms and y be the amount of Feed B in kilograms, both non-negative integers.\",\n    \"CONSTRAINTS\": {\n        \"Protein\": \"10x + 7y \\geq 30\",\n        \"Fat\": \"8x + 15y \\geq 50\"\n    },\n    \"OBJECTIVE\": \"Minimize 100x + 80y\"\n}", "expert": "Modeling Expert"}

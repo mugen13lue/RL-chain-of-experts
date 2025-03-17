@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of cans produced and y be the number of glass bottles produced.\",\n    \"CONSTRAINTS\": \"250x + 1000y \\geq 1000000, x \\geq 3y, y \\geq 100\",\n    \"OBJECTIVE\": \"Maximize z = x + y\"\n}", "expert": "Modeling Expert"}

@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of pills of Pill 1\n- y: number of pills of Pill 2\n\nExtracted Constraints:\n- Pain Medication: 0.2x + 0.6y \\leq 6\n- Anxiety Medication: 0.3x + 0.2y \\geq 3\n- Non-negativity: x \\geq 0, y \\geq 0\n\nExtracted Objective:\n- Minimize 0.3x + 0.1y", "expert": "Parameter Extractor"}

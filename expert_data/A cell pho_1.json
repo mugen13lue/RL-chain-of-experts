@@ -1,0 +1,1 @@
+{"comment": "Variables:\n- x: number of rural factories\n- y: number of urban factories\n\nConstraints:\n- 8x + 20y \\leq 260 (total number of managers)\n- 100x + 200y \\geq 3000 (minimum number of phones)\n- x \\geq 0\n- y \\geq 0\n\nObjective:\n- Minimize Z = x + y (total number of factories)", "expert": "Parameter Extractor"}

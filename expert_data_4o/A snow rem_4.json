@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of small trucks and y be the number of large trucks, both integers\",\n    \"CONSTRAINTS\": {\n        \"1\": \"2x + 4y \\leq 30\",\n        \"2\": \"x \\geq 10\",\n        \"3\": \"y \\geq 3\",\n        \"4\": \"x = 2y\"\n    },\n    \"OBJECTIVE\": \"Maximize 30x + 50y\"\n}", "expert": "Modeling Expert"}

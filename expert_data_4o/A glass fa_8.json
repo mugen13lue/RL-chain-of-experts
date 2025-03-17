@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of regular glass panes produced and y be the number of tempered glass panes produced, both integers.\",\n    \"CONSTRAINTS\": \"3x + 5y \\leq 300, 5x + 8y \\leq 300, x \\geq 0, y \\geq 0\",\n    \"OBJECTIVE\": \"Maximize 8x + 10y\"\n}", "expert": "Modeling Expert"}

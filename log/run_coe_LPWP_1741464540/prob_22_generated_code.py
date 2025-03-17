@@ -1,0 +1,43 @@
+import gurobipy as gp
+from gurobipy import GRB
+
+def prob_22(regular_glass_pane, tempered_glass_pane, regular_glass_cooling_time, tempered_glass_cooling_time, regular_glass_profit, tempered_glass_profit):
+    """
+    Args:
+        regular_glass_pane: an integer, the time required in the heating machine for one regular glass pane
+        tempered_glass_pane: an integer, the time required in the heating machine for one tempered glass pane
+        regular_glass_cooling_time: an integer, the time required in the cooling machine for one regular glass pane
+        tempered_glass_cooling_time: an integer, the time required in the cooling machine for one tempered glass pane
+        regular_glass_profit: an integer, the profit per pane of regular glass
+        tempered_glass_profit: an integer, the profit per pane of tempered glass
+    Returns:
+        obj: an integer, the maximum profit
+        x_val: an integer, the optimal quantity of regular glass panes to produce
+        y_val: an integer, the optimal quantity of tempered glass panes to produce
+    """
+    
+    # Create a new model
+    model = gp.Model("glass_factory")
+    
+    # Define decision variables
+    x = model.addVar(vtype=GRB.INTEGER, name="regular_glass_panes")
+    y = model.addVar(vtype=GRB.INTEGER, name="tempered_glass_panes")
+    
+    # Set objective function
+    model.setObjective(regular_glass_profit * x + tempered_glass_profit * y, sense=GRB.MAXIMIZE)
+    
+    # Add constraints
+    model.addConstr(regular_glass_pane * x + tempered_glass_pane * y <= 300, "machine_time_constraint")
+    model.addConstr(regular_glass_cooling_time * x + tempered_glass_cooling_time * y <= 300, "cooling_machine_time_constraint")
+    
+    # Optimize the model
+    model.optimize()
+    
+    # Get the maximum profit
+    obj = model.objVal
+    
+    # Get the optimal values of decision variables
+    x_val = x.x
+    y_val = y.x
+    
+    return obj, x_val, y_val

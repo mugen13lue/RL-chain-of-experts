@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of acres of apples to grow and y be the number of acres of pears to grow.\",\n    \"CONSTRAINTS\": \"The constraints are as follows: x \\geq 5, y \\geq 10, x + y \\leq 50, y \\leq 2x.\",\n    \"OBJECTIVE\": \"Maximize the profit: Maximize 2x + 4y.\"\n}", "expert": "Modeling Expert"}

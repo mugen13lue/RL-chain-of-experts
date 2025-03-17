@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- Let x be the number of processes with a catalyst.\n- Let y be the number of processes without a catalyst.\n\nExtracted Constraints:\n- Wood Constraint: 10x + 15y \\leq 300\n- Oxygen Constraint: 20x + 12y \\leq 300\n- Non-negativity Constraint: x \\geq 0, y \\geq 0\n\nExtracted Objective:\n- Maximize 15x + 18y", "expert": "Parameter Extractor"}

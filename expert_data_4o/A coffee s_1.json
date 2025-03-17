@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of mochas to make, and y be the number of regular coffees to make. Both x and y are non-negative integers.\",\n    \"CONSTRAINTS\": \"3x + 6y \\leq 400, 6x + 2y \\leq 500, x \\geq 3y, x, y \\geq 0\",\n    \"OBJECTIVE\": \"Minimize Z = 5x + 3y\"\n}", "expert": "Modeling Expert"}

@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of mango bubble teas made and y be the number of lychee bubble teas made.\",\n    \"CONSTRAINTS\": \"4x \\leq 2000, 6y \\leq 3000, y \\geq 0.4(x+y), x \\geq y\",\n    \"OBJECTIVE\": \"Minimize 8x + 6y\"\n}", "expert": "Modeling Expert"}

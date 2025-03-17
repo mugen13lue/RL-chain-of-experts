@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x1 be the number of sq. feet allocated for phone production and x2 be the number of sq. feet allocated for laptop production. Both x1 and x2 are non-negative integers.\",\n    \"CONSTRAINTS\": \"2x1 + 3x2 \\leq 2000, 12x1 + 15x2 \\leq 5000, x1 + x2 \\leq 100\",\n    \"OBJECTIVE\": \"Maximize 50x1 + 70x2\"\n}", "expert": "Modeling Expert"}

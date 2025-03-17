@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": {\n        \"x1\": \"number of regular tacos made\",\n        \"x2\": \"number of deluxe tacos made\"\n    },\n    \"CONSTRAINTS\": [\n        \"x1 \\leq 50\",\n        \"x2 \\leq 40\",\n        \"x1 + x2 \\leq 70\"\n    ],\n    \"OBJECTIVE\": \"Maximize profit: Maximize 2.50*x1 + 3.55*x2\"\n}", "expert": "Parameter Extractor"}

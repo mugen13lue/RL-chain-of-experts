@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of helicopter trips\n- y: number of bus trips\n\nExtracted Constraints:\n- 5x + 8y \\geq 120\n- x \\geq 0.3(x+y)\n- y \\leq 10\n\nExtracted Objective:\n- Minimize total time: x + 3y", "expert": "Parameter Extractor"}

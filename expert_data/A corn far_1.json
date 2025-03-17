@@ -1,0 +1,1 @@
+{"comment": "Variables:\n- x: number of tractors used\n- y: number of cars used\n\nConstraints:\n- Corn Weight: 40x + 20y \\geq 500\n- Number of Cars: y \\geq 2x\n- Non-negativity: x, y \\geq 0\n\nObjective:\n- Minimize Z = x + y", "expert": "Parameter Extractor"}

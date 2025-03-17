@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of full time workers\n- y: number of part time workers\n\nDefinitions:\n- x: number of full time workers to be scheduled\n- y: number of part time workers to be scheduled", "expert": "Parameter Extractor"}

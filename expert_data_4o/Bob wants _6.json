@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of servings of noodles and y be the number of servings of protein bars. Both x and y are non-negative integers.\",\n    \"CONSTRAINTS\": \"600x + 250y \\geq 2000, 1.5x + 5y \\geq 16, x \\geq 0, y \\geq 0\",\n    \"OBJECTIVE\": \"Minimize Cost = 5x + 2.5y\"\n}", "expert": "Modeling Expert"}

@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the quantity of black milk tea to be made and y be the quantity of matcha milk tea to be made.\",\n    \"CONSTRAINTS\": \"600x + 525y \\leq 30000, 10x + 5y \\leq 500, x \\geq 0, y \\geq 0\",\n    \"OBJECTIVE\": \"Maximize 7.5x + 5y\"\n}", "expert": "Modeling Expert"}

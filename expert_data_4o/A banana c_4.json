@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of small crates used and y be the number of large crates used, both integers.\",\n    \"CONSTRAINTS\": \"20x \\leq 500, 50y \\leq 500, y \\geq 2x, x \\geq 5\",\n    \"OBJECTIVE\": \"Maximize z = x + y\"\n}", "expert": "Modeling Expert"}

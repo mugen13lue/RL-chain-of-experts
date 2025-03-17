@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of medium sized factories and y be the number of small factories.\",\n    \"CONSTRAINTS\": [\n        \"50x + 35y \\geq 250\",\n        \"3x + 2y \\leq 16\",\n        \"x \\geq 0\",\n        \"y \\geq 0\"\n    ],\n    \"OBJECTIVE\": \"Minimize Z = x + y\"\n}", "expert": "Modeling Expert"}

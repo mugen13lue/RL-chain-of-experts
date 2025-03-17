@@ -1,0 +1,33 @@
+from gurobipy import *
+
+def prob_2(senior_accountants, junior_accountants):
+    """
+    Minimize Wage Bill problem
+    
+    Args:
+        senior_accountants: an integer, number of senior accountants
+        junior_accountants: an integer, number of junior accountants
+    
+    Returns:
+        obj: an integer, minimized wage bill
+    """
+    m = Model("Minimize_Wage_Bill")
+    
+    # Decision Variables
+    x = m.addVar(vtype=GRB.INTEGER, name="senior_accountants")
+    y = m.addVar(vtype=GRB.INTEGER, name="junior_accountants")
+    
+    # Constraints
+    m.addConstr(x + y >= 100, "Total_Accountants")
+    m.addConstr(x >= 5, "Min_Senior_Accountants")
+    m.addConstr(x >= y/3, "Senior_Junior_Ratio")
+    m.addConstr(3000*x + 1000*y <= 150000, "Weekly_Wage_Bill")
+    
+    # Objective Function
+    m.setObjective(3000*x + 1000*y, GRB.MINIMIZE)
+    
+    # Optimize model
+    m.optimize()
+    
+    # Return optimized objective value
+    return int(m.objVal)

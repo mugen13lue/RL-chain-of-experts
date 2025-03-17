@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of motorcycles and y be the number of sedans purchased.\",\n    \"CONSTRAINTS\": [\n        \"x \\leq 0.25(x + y)\", \n        \"4x + 15y \\leq 200\",\n        \"30x + 70y \\geq 1200\",\n        \"x \\geq 0\",\n        \"y \\geq 0\"\n    ],\n    \"OBJECTIVE\": \"Maximize 100x + 225y\"\n}", "expert": "Modeling Expert"}

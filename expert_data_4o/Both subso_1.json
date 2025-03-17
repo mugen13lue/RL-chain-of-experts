@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of bags of subsoil\n- y: number of bags of topsoil\n\nExtracted Constraints:\n- Water Constraint: 10x + 6y \\leq 150\n- Minimum Topsoil Constraint: y \\geq 10\n- Topsoil Percentage Constraint: y \\leq 0.3(x + y)\n- Non-negativity Constraint: x, y \\geq 0\n\nExtracted Objective:\n- Minimize 10x + 6y", "expert": "Parameter Extractor"}

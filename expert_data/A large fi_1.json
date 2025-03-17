@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of canoes\n- y: number of diesel boats\n\nDefinitions:\n- x: number of canoes used to transport fish back to shore\n- y: number of diesel boats used to transport fish back to shore", "expert": "Parameter Extractor"}

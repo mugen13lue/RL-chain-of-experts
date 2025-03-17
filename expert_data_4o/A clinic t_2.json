@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of patients processed by the automatic machine\n- y: number of patients processed by the manual machine\n\nConstraints:\n1. x \\leq 20\n2. y \\geq 2x\n3. 10x + 15y \\leq 20000\n\nObjective:\nMaximize z = x + y", "expert": "Parameter Extractor"}

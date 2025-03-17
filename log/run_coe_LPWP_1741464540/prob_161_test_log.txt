@@ -1,0 +1,8 @@
+===============test sample 0===============
+Runtime Error
+prob_161() got an unexpected keyword argument 'new_one'
+
+
+
+0/1 passed
+is correct: False

@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of large mobile production units and y be the number of small mobile production units.\",\n    \"CONSTRAINTS\": \"x \\geq 10, y \\geq 5, x \\geq 60, x, y \\in \\mathbb{Z}^+\",\n    \"OBJECTIVE\": \"Minimize 2x + y\"\n}", "expert": "Modeling Expert"}

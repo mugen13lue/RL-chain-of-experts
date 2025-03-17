@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: amount of money invested in apartments\n- y: amount of money invested in townhouses\n\nExtracted Constraints:\n- Total Investment: x + y = 600,000\n- Maximum Investment in Apartments: x \\leq 200,000\n- Minimum Investment Ratio: x \\geq 0.5y\n\nExtracted Objective:\n- Maximize Profit: 0.10x + 0.15y", "expert": "Parameter Extractor"}

@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x_bus be the number of bus trips and x_car be the number of car trips.\",\n    \"CONSTRAINTS\": \"x_bus \\leq 10, 0.6(x_bus + x_car) \\leq x_bus + x_car, 20x_bus + 6x_car \\geq 300\",\n    \"OBJECTIVE\": \"Minimize 30x_bus + 15x_car\"\n}", "expert": "Modeling Expert"}

@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of old vans used and y be the number of new vans used.\",\n    \"CONSTRAINTS\": {\n        \"Minimum bottles constraint\": \"100x + 80y \\geq 5000\",\n        \"Maximum new vans constraint\": \"y \\leq 30\"\n    },\n    \"OBJECTIVE\": \"Minimize total pollution: 50x + 30y\"\n}", "expert": "Modeling Expert"}

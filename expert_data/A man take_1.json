@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of pills of supplement A\n- y: number of pills of supplement B\n\nDefinitions:\n- x: number of pills of supplement A\n- y: number of pills of supplement B\n\nThese variables represent the quantities of each supplement that the man should buy to minimize costs.", "expert": "Parameter Extractor"}

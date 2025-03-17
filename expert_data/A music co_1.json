@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: Quantity of full-weighted keyboards produced\n- y: Quantity of semi-weighted keyboards produced\n\nDefinitions:\n- x: The decision variable representing the quantity of full-weighted keyboards produced.\n- y: The decision variable representing the quantity of semi-weighted keyboards produced.", "expert": "Parameter Extractor"}

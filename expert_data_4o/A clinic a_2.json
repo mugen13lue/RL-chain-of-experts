@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of pill vaccines administered and y be the number of shot vaccines administered.\",\n    \"CONSTRAINTS\": [\n        \"x \\geq 30\",\n        \"y \\geq 3x\",\n        \"10x + 20y \\leq 10000\"\n    ],\n    \"OBJECTIVE\": \"Maximize the total number of patients vaccinated: Maximize x + y\"\n}", "expert": "Modeling Expert"}

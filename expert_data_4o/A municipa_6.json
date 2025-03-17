@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: Number of full-time staff hired\n- y: Number of part-time staff hired\n\nDefinitions:\n- x is an integer representing the number of full-time staff hired by the municipality.\n- y is an integer representing the number of part-time staff hired by the municipality.", "expert": "Parameter Extractor"}

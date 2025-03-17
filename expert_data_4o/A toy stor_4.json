@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of trips made by the new company and y be the number of trips made by the old company. Both x and y are non-negative integers.\",\n    \"CONSTRAINTS\": \"50x + 70y \\geq 1000, x \\leq 15, y \\geq 0.4(x + y)\",\n    \"OBJECTIVE\": \"Minimize Z = 30x + 40y\"\n}", "expert": "Modeling Expert"}

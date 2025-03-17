@@ -1,0 +1,8 @@
+===============test sample 0===============
+Runtime Error
+prob_197() got an unexpected keyword argument 'small_canoes'
+
+
+
+0/1 passed
+is correct: False

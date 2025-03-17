@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of counter-top sized machines to be bought and y be the number of fridge sized machines to be bought.\",\n    \"CONSTRAINTS\": \"50x + 70y \\leq 500, 80x + 150y \\geq 1000\",\n    \"OBJECTIVE\": \"Minimize the total number of machines needed, which is represented by the expression x + y.\"\n}", "expert": "Modeling Expert"}

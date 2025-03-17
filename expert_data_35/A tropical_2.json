@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of submarine trips\n- y: number of boat trips\n\nExtracted Constraints:\n- Mail Constraint: 100x + 80y \\geq 1000\n- Gas Constraint: 30x + 25y \\leq G\n- Submarine Trips Constraint: x \\leq 6\n- Boat Trips Constraint: y \\geq 0.5x\n\nExtracted Objective:\n- Minimize gas usage: Minimize 30x + 25y", "expert": "Parameter Extractor"}

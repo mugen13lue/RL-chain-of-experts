@@ -1,0 +1,38 @@
+```python
+import gurobipy as gp
+from gurobipy import GRB
+
+def prob_164():
+    """
+    Solve the sand delivery problem and maximize the amount of sand that can be delivered.
+
+    Returns:
+        objective_value: the amount of sand that can be delivered (objective value of the problem)
+    """
+    model = gp.Model("Sand_Delivery")
+
+    # Variables
+    x = model.addVar(vtype=GRB.INTEGER, name="small_containers")
+    y = model.addVar(vtype=GRB.INTEGER, name="large_containers")
+
+    # Constraints
+    model.addConstr(x == 3*y, "small_large_relation")
+    model.addConstr(x + 3*y <= 100, "total_people_constraint")
+    model.addConstr(x >= 5, "min_small_containers")
+    model.addConstr(y >= 3, "min_large_containers")
+
+    # Objective
+    model.setObjective(20*x + 50*y, sense=GRB.MAXIMIZE)
+
+    # Optimize the model
+    model.optimize()
+
+    # Get the objective value
+    objective_value = model.objVal
+
+    return objective_value
+
+# Call the function to solve the problem
+result = prob_164()
+print("Maximum amount of sand that can be delivered:", result)
+```

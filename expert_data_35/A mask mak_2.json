@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- Let x be the number of small boxes\n- Let y be the number of large boxes\n\nExtracted Constraints:\n- Constraint 1: x \\geq 3y\n- Constraint 2: 25x + 45y \\geq 750\n- Constraint 3: y \\geq 5\n- Constraint 4: x \\geq 0, y \\geq 0\n\nExtracted Objective:\n- Minimize Z = x + y", "expert": "Parameter Extractor"}

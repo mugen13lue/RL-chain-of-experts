@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of regular boat trips and y be the number of speed boat trips.\",\n    \"CONSTRAINS\": [\n        \"x \\geq 0\",\n        \"y \\geq 0\",\n        \"x + y \\leq 20\",\n        \"y \\geq 0.5(x + y)\",\n        \"20x + 30y \\geq 1000\"\n    ],\n    \"OBJECTIVE\": \"Minimize 10x + 20y\"\n}", "expert": "Modeling Expert"}

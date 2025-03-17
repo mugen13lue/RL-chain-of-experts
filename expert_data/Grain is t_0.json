@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of large bags and y be the number of tiny bags.\",\n    \"CONSTRAINTS\": {\n        \"Energy Constraint\": \"4x + 1.5y \\leq 110\",\n        \"Large Bags Constraint\": \"x \\geq 2y\",\n        \"Tiny Bags Constraint\": \"y \\geq 20\"\n    },\n    \"OBJECTIVE\": \"Maximize Z = 25x + 6y\"\n}", "expert": "Modeling Expert"}

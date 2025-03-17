@@ -1,0 +1,36 @@
+```python
+import gurobipy as gp
+from gurobipy import GRB
+
+def prob_264(specialized_third_party, common_third_party_annotation_company):
+    """
+    Args:
+        specialized_third_party: an integer, the number of images annotated by the specialized third-party company
+        common_third_party_annotation_company: an integer, the number of images annotated by the common third-party annotation company
+    Returns:
+        obj: an integer, the cost of annotating the whole dataset
+    """
+    obj = 1e9
+
+    # Create a new model
+    m = gp.Model("annotation_optimization")
+
+    # Define decision variables
+    x = m.addVar(name="x")  # hours allocated to specialized company
+    y = m.addVar(name="y")  # hours allocated to common company
+
+    # Set objective function: minimize total cost
+    m.setObjective(100*x + 72*y, GRB.MINIMIZE)
+
+    # Add constraints
+    m.addConstr(x + y >= 250, "total_hours_constraint")
+    m.addConstr(x >= 83.33, "specialized_company_constraint")
+
+    # Optimize model
+    m.optimize()
+
+    if m.status == GRB.OPTIMAL:
+        obj = m.objVal
+
+    return obj
+```

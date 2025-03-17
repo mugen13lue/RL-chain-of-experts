@@ -1,0 +1,39 @@
+```python
+import gurobipy as gp
+from gurobipy import GRB
+
+def prob_210(light_oil, non_sticky_oil, heavy_oil):
+    """
+    Calculates the maximum net revenue for Maple Oil processing problem.
+
+    Args:
+        light_oil: an integer representing the number of tanks of light oil to process
+        non_sticky_oil: an integer representing the number of tanks of non-sticky oil to process
+        heavy_oil: an integer representing the number of tanks of heavy oil to process
+
+    Returns:
+        obj: an integer representing the maximum net revenue
+    """
+    # Create a new model
+    model = gp.Model("oil_processing")
+
+    # Define decision variables
+    x1 = model.addVar(vtype=GRB.INTEGER, name="light_oil")
+    x2 = model.addVar(vtype=GRB.INTEGER, name="non_sticky_oil")
+    x3 = model.addVar(vtype=GRB.INTEGER, name="heavy_oil")
+
+    # Set objective function
+    model.setObjective(550*x1 + 750*x2 + 950*x3, sense=GRB.MAXIMIZE)
+
+    # Add constraints
+    model.addConstr(3*x1 + 6*x2 + 9*x3 <= 250, "compound_A_constraint")
+    model.addConstr(3*x1 + 2*x2 + 3*x3 <= 150, "compound_B_constraint")
+
+    # Optimize the model
+    model.optimize()
+
+    # Get the maximum net revenue
+    obj = model.objVal
+
+    return obj
+```

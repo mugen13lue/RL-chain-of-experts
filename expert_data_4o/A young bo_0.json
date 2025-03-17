@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of glasses of milk and y be the number of plates of vegetables consumed\",\n    \"CONSTRAINTS\": {\n        \"Calcium\": \"40x + 15y \\geq 100\",\n        \"Iron\": \"25x + 30y \\geq 50\",\n        \"Non-negativity\": \"x, y \\geq 0\"\n    },\n    \"OBJECTIVE\": \"Minimize Cost: $1x + $2y\"\n}", "expert": "Modeling Expert"}

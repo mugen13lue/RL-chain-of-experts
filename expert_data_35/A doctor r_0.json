@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of burgers to eat and y be the number of slices of pizza to eat.\",\n    \"CONSTRAINTS\": {\n        \"Fat\": \"10x + 8y \\geq 130\",\n        \"Calories\": \"300x + 250y \\geq 3000\",\n        \"Cholesterol\": \"12x + 10y \\leq M\"\n    },\n    \"OBJECTIVE\": \"Minimize M\"\n}", "expert": "Modeling Expert"}

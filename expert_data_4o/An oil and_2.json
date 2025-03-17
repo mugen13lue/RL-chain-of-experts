@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of high-volume pipes\n- y: number of low-volume pipes\n\nDefinitions:\n- x: Number of high-volume pipes used in the oil and gas company's operations.\n- y: Number of low-volume pipes used in the oil and gas company's operations.", "expert": "Parameter Extractor"}

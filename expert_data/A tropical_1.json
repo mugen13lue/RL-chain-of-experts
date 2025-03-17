@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of submarine trips\n- y: number of boat trips\n\nDefinitions:\n- x: The number of submarine trips made by the city to transport mail.\n- y: The number of boat trips made by the city to transport mail.", "expert": "Parameter Extractor"}

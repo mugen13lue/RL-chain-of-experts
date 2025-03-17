@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let T be the number of trains and M be the number of trams, both integers\",\n    \"CONSTRAINTS\": [\n        \"T_capacity * T + M_capacity * M \\geq P_min\",\n        \"M \\geq 2 * T\"\n    ],\n    \"OBJECTIVE\": \"Minimize the total number of transportation units: obj = T + M\"\n}", "expert": "Modeling Expert"}

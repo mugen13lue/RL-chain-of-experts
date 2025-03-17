@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of vans used and y be the number of trucks used.\",\n    \"CONSTRAINTS\": {\n        \"Minimum pairs constraint\": \"50x + 100y \\geq 2000\",\n        \"Truck constraint\": \"y \\leq x\"\n    },\n    \"OBJECTIVE\": \"Minimize the number of vans used: Minimize x\"\n}", "expert": "Modeling Expert"}

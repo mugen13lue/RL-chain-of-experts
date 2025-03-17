@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of trips using local sled dogs and y be the number of trips using trucks, both integers\",\n    \"CONSTRAINTS\": \"c_{sd} \\times x + c_{truck} \\times y \\leq B, x \\leq y, x \\geq 0, y \\geq 0\",\n    \"OBJECTIVE\": \"Maximize: f_{sd} \\times x + f_{truck} \\times y\"\n}", "expert": "Modeling Expert"}

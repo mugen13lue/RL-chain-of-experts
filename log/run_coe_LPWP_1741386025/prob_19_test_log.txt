@@ -1,0 +1,8 @@
+===============test sample 0===============
+Runtime Error
+prob_19() got an unexpected keyword argument 'thin_jar'
+
+
+
+0/1 passed
+is correct: False

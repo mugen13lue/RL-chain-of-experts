@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of wired headphones to be made\n- y: number of wireless headphones to be made\n\nExtracted Constraints:\n- Wired Team Constraint: x \\leq 100\n- Wireless Team Constraint: y \\leq 170\n- Audio Testing Machine Constraint: x + y \\leq 150\n\nExtracted Objective:\n- Maximize profit: Maximize 50x + 20y", "expert": "Parameter Extractor"}

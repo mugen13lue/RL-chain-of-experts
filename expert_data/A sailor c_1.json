@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of crab cakes eaten\n- y: number of lobster rolls eaten\n\nDefinitions:\n- x: the decision variable representing the number of crab cakes eaten by the sailor\n- y: the decision variable representing the number of lobster rolls eaten by the sailor", "expert": "Parameter Extractor"}

@@ -1,0 +1,12 @@
+===============test sample 0===============
+Program Output:
+750
+
+Ground Truth:
+750
+Is passed: True
+
+
+
+1/1 passed
+is correct: True

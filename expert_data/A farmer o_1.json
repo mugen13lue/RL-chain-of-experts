@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of ferry trips\n- y: number of light rail trips\n\nDefinitions:\n- x: the decision variable representing the number of ferry trips\n- y: the decision variable representing the number of light rail trips", "expert": "Parameter Extractor"}

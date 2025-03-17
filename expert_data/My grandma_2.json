@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of pills of Zodiac and y be the number of pills of Sunny.\",\n    \"CONSTRAINTS\": \"1. Z1 requirement: 1.3x + 1.2y \\geq 5\\n2. D3 requirement: 1.5x + 5y \\geq 10\\n3. Non-negativity constraint: x, y \\geq 0\",\n    \"OBJECTIVE\": \"Minimize Cost: x + 3y\"\n}", "expert": "Modeling Expert"}

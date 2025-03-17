@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of pill vaccines administered\n- y: number of shot vaccines administered\n\nConstraints:\n- x \\geq 30\n- y \\geq 3x\n- 10x + 20y \\leq 10000\n\nObjective:\n- Maximize the total number of patients vaccinated: Maximize x + y", "expert": "Parameter Extractor"}

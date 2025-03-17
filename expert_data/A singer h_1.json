@@ -1,0 +1,1 @@
+{"comment": "Variables:\n- x: number of pop concerts\n- y: number of R&B concerts\n\nConstraints:\n- 100x + 240y \\geq 10000\n- 2x + 4y \\leq 180\n- y \\leq 0.4(x+y)\n- x \\geq 0\n- y \\geq 0\n\nObjective:\nMinimize Z = x + y", "expert": "Parameter Extractor"}

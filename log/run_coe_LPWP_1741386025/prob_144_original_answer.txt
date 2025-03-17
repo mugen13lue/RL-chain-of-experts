@@ -1,0 +1,33 @@
+```python
+import gurobipy as gp
+from gurobipy import GRB
+
+def prob_144(chlorine, water_softener):
+    """
+    Args:
+        chlorine: an integer representing the number of units of chlorine to be added to the pool.
+        water_softener: an integer representing the number of units of water softener to be added to the pool.
+    Returns:
+        total_time: an integer representing the minimum total time it takes for the pool to be ready.
+    """
+    model = gp.Model("pool_preparation")
+
+    # Variables
+    x = model.addVar(lb=200, vtype=GRB.INTEGER, name="chlorine")
+    y = model.addVar(lb=0, ub=500, vtype=GRB.INTEGER, name="water_softener")
+
+    # Constraints
+    model.addConstr(x + y <= 500, "total_chemical_constraint")
+    model.addConstr(x <= 0.5 * y, "ratio_constraint")
+
+    # Objective
+    model.setObjective(x + 2*y, GRB.MINIMIZE)
+
+    # Optimize model
+    model.optimize()
+
+    total_time = model.objVal
+
+    return total_time
+```
+This code defines a mathematical optimization model using the Gurobi optimization library to minimize the total time it takes for the pool to be ready based on the given constraints and objective function. The variables x and y represent the number of units of chlorine and water softener added to the pool, respectively. The constraints ensure that the total amount of chemicals added does not exceed 500 units, there is at least 200 units of chlorine, and the ratio of chlorine to water softener is at most 0.5. The objective function to minimize the total time is correctly defined as 1*x + 2*y. The code effectively models the problem and optimizes the total time it takes for the pool to be ready.

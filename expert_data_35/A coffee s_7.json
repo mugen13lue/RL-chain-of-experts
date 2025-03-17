@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of mochas and y be the number of regular coffees, both integers.\",\n    \"CONSTRAINTS\": {\n        \"Coffee Powder\": \"3x + 6y \\leq 400\",\n        \"Milk\": \"6x + 2y \\leq 500\",\n        \"Minimum Mochas\": \"x \\geq 3y\"\n    },\n    \"OBJECTIVE\": \"Minimize 5x + 3y\"\n}", "expert": "Modeling Expert"}

@@ -1,0 +1,42 @@
+import gurobipy as gp
+from gurobipy import GRB
+
+def prob_184(medium, large, _2, _30, _4, _70, three, _60, _5):
+    """
+    Args:
+        medium: an integer, the number of medium sized carts
+        large: an integer, the number of large sized carts
+        _2: an integer, horse requirement for medium sized cart
+        _30: an integer, rice carrying capacity of medium sized cart
+        _4: an integer, horse requirement for large sized cart
+        _70: an integer, rice carrying capacity of large sized cart
+        three: an integer, ratio of medium to large sized carts
+        _60: an integer, available horses
+        _5: an integer, minimum number of medium and large sized carts
+    Returns:
+        amount_of_rice: an integer, maximum amount of rice that can be transported
+    """
+    
+    # Create a new model
+    model = gp.Model("transportation")
+
+    # Define decision variables
+    x = model.addVar(vtype=GRB.INTEGER, name="medium_carts")
+    y = model.addVar(vtype=GRB.INTEGER, name="large_carts")
+
+    # Set objective function
+    model.setObjective(30*x + 70*y, sense=GRB.MAXIMIZE)
+
+    # Add constraints
+    model.addConstr(2*x + 4*y <= 60, "horses_constraint")
+    model.addConstr(x >= 5, "medium_cart_constraint")
+    model.addConstr(y >= 5, "large_cart_constraint")
+    model.addConstr(x == 3*y, "ratio_constraint")
+
+    # Optimize model
+    model.optimize()
+
+    # Get the optimal solution
+    amount_of_rice = model.objVal
+
+    return amount_of_rice

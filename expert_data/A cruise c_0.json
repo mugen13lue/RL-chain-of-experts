@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of large cruise ship trips and y be the number of small cruise ship trips.\",\n    \"CONSTRAINTS\": [\n        \"x \\leq 7\",\n        \"y \\geq 0.4(x+y)\",\n        \"2000x + 800y \\geq 20000\"\n    ],\n    \"OBJECTIVE\": \"Minimize 20x + 15y\"\n}", "expert": "Modeling Expert"}

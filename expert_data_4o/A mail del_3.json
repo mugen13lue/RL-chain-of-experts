@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of regular boat trips and y be the number of speed boat trips, where x and y are integers.\",\n    \"CONSTRAINTS\": \"Constraints: 1. x \\leq 20, 2. y \\geq 0.5(x+y), 3. 20x + 30y \\geq 1000\",\n    \"OBJECTIVE\": \"Minimize the total amount of gas consumed: 10x + 20y\"\n}", "expert": "Modeling Expert"}

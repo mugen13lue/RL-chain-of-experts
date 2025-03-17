@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of new model furnaces purchased and y be the number of old model furnaces purchased.\",\n    \"CONSTRAINTS\": \"10x + 15y \\geq 200, 200x + 250y \\leq 3500, y \\leq 0.35(x+y), x \\geq 5\",\n    \"OBJECTIVE\": \"Minimize z = x + y\"\n}", "expert": "Modeling Expert"}

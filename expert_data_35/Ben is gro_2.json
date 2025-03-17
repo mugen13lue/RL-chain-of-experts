@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of acres of apples\n- y: number of acres of pears\n\nExtracted Constraints:\n- Minimum Acres: x \\geq 5, y \\geq 10\n- Total Acres: x + y \\leq 50\n- Workforce Limitation: y \\leq 2x\n\nExtracted Objective:\n- Maximize profit: 2x + 4y", "expert": "Parameter Extractor"}

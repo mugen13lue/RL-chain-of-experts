@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- Let x be the number of salads prepared.\n- Let y be the number of fruit bowls prepared.\n\nExtracted Constraints:\n- Vitamin: 15x + 3y \\geq 90\n- Fibre: 12x + 3y \\geq 110\n- Proportion: y \\leq 0.3(x + y)\n\nExtracted Objective:\n- Maximize Z = 2x + 8y", "expert": "Parameter Extractor"}

@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of smoothies and y be the number of protein bars.\",\n    \"CONSTRAINTS\": [\n        \"2x + 7y \\leq \\text{Protein intake limit}\",\n        \"300x + 250y \\leq 2000\",\n        \"y = 2x\"\n    ],\n    \"OBJECTIVE\": \"Maximize 2x + 7y\"\n}", "expert": "Modeling Expert"}

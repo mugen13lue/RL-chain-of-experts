@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let L be the number of large bags and T be the number of tiny bags, both integers\",\n    \"CONSTRAINTS\": [\n        \"4L + 1.5T \\leq 110\",\n        \"L = 2T\",\n        \"T \\geq 20\",\n        \"L, T \\geq 0, integers\"\n    ],\n    \"OBJECTIVE\": \"Maximize 25L + 6T\"\n}", "expert": "Modeling Expert"}

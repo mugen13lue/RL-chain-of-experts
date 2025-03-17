@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of densely-seated ski lifts\n- y: number of loosely-seated ski lifts\n\nExtracted Constraints:\n- 45x + 20y \\geq 1000\n- 30x + 22y \\leq 940\n- y \\geq 5\n- x, y \\geq 0\n\nExtracted Objective:\n- Minimize Z = x + y", "expert": "Parameter Extractor"}

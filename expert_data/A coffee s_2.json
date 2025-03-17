@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- \\( x \\): number of mochas to make\n- \\( y \\): number of regular coffees to make\n\nExtracted Constraints:\n- Coffee Powder: \\( 3x + 6y \\leq 400 \\)\n- Milk: \\( 6x + 2y \\leq 500 \\)\n- Minimum Mochas: \\( x \\geq 3y \\)\n\nExtracted Objective:\n- Minimize total production time: \\( 5x + 3y \\)", "expert": "Parameter Extractor"}

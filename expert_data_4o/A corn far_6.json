@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of tractors used and y be the number of cars used, both integers\",\n    \"CONSTRAINTS\": [\n        \"40x + 20y \\geq 500\",\n        \"y \\geq 2x\",\n        \"x, y \\geq 0\"\n    ],\n    \"OBJECTIVE\": \"Minimize z = x + y\"\n}", "expert": "Modeling Expert"}

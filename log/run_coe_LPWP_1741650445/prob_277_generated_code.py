@@ -1,0 +1,30 @@
+import gurobipy as gp
+from gurobipy import GRB
+
+def prob_277(mechanical, standard_keyboards):
+    """
+    Args:
+        mechanical: an integer, the number of mechanical keyboards
+        standard_keyboards: an integer, the number of standard keyboards
+
+    Returns:
+        obj: an integer, the maximum total number of keyboards manufactured
+    """
+    model = gp.Model("keyboard_manufacturing")
+
+    # Decision variables
+    x = model.addVar(vtype=GRB.INTEGER, name="mechanical_keyboards", obj=mechanical)
+    y = model.addVar(vtype=GRB.INTEGER, name="standard_keyboards", obj=standard_keyboards)
+
+    # Constraints
+    model.addConstr(5*x + 2*y <= 1000, "plastic_constraint")
+    model.addConstr(2*x + y <= 250, "solder_constraint")
+    model.addConstr(y >= 30, "standard_keyboard_constraint")
+
+    # Objective function
+    model.setObjective(x + y, sense=GRB.MAXIMIZE)
+
+    # Optimize the model
+    model.optimize()
+
+    return int(model.objVal)

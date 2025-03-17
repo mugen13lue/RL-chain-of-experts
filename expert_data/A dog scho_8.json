@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of labradors and y be the number of golden retrievers, both integers.\",\n    \"CONSTRAINS\": [\n        \"5x + 6y \\leq 1500\",\n        \"y \\geq 50\",\n        \"x \\leq 0.6(x+y)\",\n        \"x, y \\geq 0, integers\"\n    ],\n    \"OBJECTIVE\": \"Maximize 7x + 10y\"\n}", "expert": "Modeling Expert"}

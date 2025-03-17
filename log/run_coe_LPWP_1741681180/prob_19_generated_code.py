@@ -1,0 +1,24 @@
+from pulp import LpMaximize, LpProblem, LpVariable
+
+def prob_19(thin_jar, stubby_jar):
+    # Create the LP maximization problem
+    prob = LpProblem("Maximize Profit", LpMaximize)
+
+    # Define decision variables
+    x = LpVariable("x", lowBound=0, cat='Integer')  # Number of thin jars
+    y = LpVariable("y", lowBound=0, cat='Integer')  # Number of stubby jars
+
+    # Define objective function
+    prob += 5*x + 9*y, "Total Profit"
+
+    # Add constraints
+    prob += 50*x + 30*y <= 3000, "Shaping Time Constraint"
+    prob += 90*x + 150*y <= 4000, "Baking Time Constraint"
+
+    # Solve the problem
+    prob.solve()
+
+    # Get the optimal solution
+    optimal_profit = round(prob.objective.value())
+
+    return optimal_profit

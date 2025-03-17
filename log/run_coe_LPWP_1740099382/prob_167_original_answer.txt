@@ -1,0 +1,35 @@
+```python
+import gurobipy as gp
+from gurobipy import GRB
+
+def prob_167(small_wagons, large_wagons, twice):
+    """
+    Args:
+        small_wagons: an integer, number of small wagons
+        large_wagons: an integer, number of large wagons
+        twice: an integer, twice the number of large wagons
+    Returns:
+        obj: an integer, number of wagons
+    """
+    model = gp.Model("wagon_optimization")
+
+    # Variables
+    x = model.addVar(vtype=GRB.INTEGER, name="x")
+    y = model.addVar(vtype=GRB.INTEGER, name="y")
+
+    # Constraints
+    model.addConstr(x >= 2*y)
+    model.addConstr(y >= 10)
+    model.addConstr(20*x + 50*y == 2000)
+
+    # Objective
+    model.setObjective(x + y, sense=GRB.MINIMIZE)
+
+    # Optimize model
+    model.optimize()
+
+    obj = model.objVal
+
+    return obj
+```
+This code snippet defines an optimization model using the Gurobi library to solve the problem of minimizing the total number of wagons needed to transport 2000 units of ore to the surface. The variables, constraints, and objective function are correctly implemented based on the problem description and insights provided by other experts. The function `prob_167` takes the number of small wagons, large wagons, and the requirement for small wagons to be twice the number of large wagons as input, and returns the optimal number of wagons.

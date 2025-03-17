@@ -1,0 +1,39 @@
+```python
+import gurobipy as gp
+from gurobipy import GRB
+
+def prob_229(low_power, high_power):
+    """
+    Solves the air conditioner problem.
+
+    Args:
+        low_power: an integer, number of low-powered air conditioners
+        high_power: an integer, number of high-powered air conditioners
+
+    Returns:
+        obj: an integer, total number of air conditioners
+    """
+    # Create a new model
+    model = gp.Model("air_conditioner_problem")
+
+    # Define decision variables
+    x = model.addVar(lb=0, vtype=GRB.INTEGER, name="low_power")
+    y = model.addVar(lb=0, vtype=GRB.INTEGER, name="high_power")
+
+    # Set objective function
+    model.setObjective(x + y, sense=GRB.MINIMIZE)
+
+    # Add constraints
+    model.addConstr(12*x + 17*y >= 250, "housing_units_constraint")
+    model.addConstr(150*x + 250*y <= 3400, "electricity_constraint")
+    model.addConstr(x <= 0.3*(x + y), "low_power_limit_constraint")
+    model.addConstr(y >= 7, "high_power_minimum_constraint")
+
+    # Optimize the model
+    model.optimize()
+
+    # Get the total number of air conditioners
+    obj = model.objVal
+
+    return obj
+```

@@ -1,0 +1,1 @@
+{"comment": "Variables:\n- x: number of carrier pigeons used\n- y: number of owls used\n\nConstraints:\n- Number of treats constraint: 3x + 5y \\leq 1000\n- Percentage of owls constraint: y \\leq 0.4(x + y)\n- Minimum carrier pigeons constraint: x \\geq 20\n- Non-negativity constraint: x, y \\geq 0\n\nObjective:\n- Maximize Z = 2x + 5y", "expert": "Parameter Extractor"}

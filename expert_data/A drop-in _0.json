@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of blood tests and y be the number of ear tests.\",\n    \"CONSTRAINTS\": {\n        \"Time Constraint\": \"30x + 5y \\leq 7525\",\n        \"Blood Test Constraint\": \"x \\geq 3y\",\n        \"Ear Test Constraint\": \"y \\geq 12\"\n    },\n    \"OBJECTIVE\": \"Maximize Z = x + y\"\n}", "expert": "Modeling Expert"}

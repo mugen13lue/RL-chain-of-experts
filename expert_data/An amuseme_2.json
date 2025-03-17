@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- Let x be the number of cash-based machines\n- Let y be the number of card-only machines\n\nExtracted Constraints:\n- 20x + 30y \\geq 500\n- 4x + 5y \\leq 90\n- y \\leq x\n\nExtracted Objective:\n- Minimize Z = x + y", "expert": "Parameter Extractor"}

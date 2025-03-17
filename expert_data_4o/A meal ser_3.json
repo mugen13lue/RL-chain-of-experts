@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of electric bikes used and y be the number of scooters used, both integers.\",\n    \"CONSTRAINTS\": \"3x + 2y \\leq 200, x \\leq 0.3(x + y), x \\leq 30, y \\geq 20\",\n    \"OBJECTIVE\": \"Maximize 8x + 5y\"\n}", "expert": "Modeling Expert"}

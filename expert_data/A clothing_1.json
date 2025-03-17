@@ -1,0 +1,1 @@
+{"comment": "Variables:\n- x: number of retail stores\n- y: number of factory outlets\n\nConstraints:\n- Customers Constraint: 200x + 80y \\geq 1200\n- Employees Constraint: 6x + 4y \\leq 50\n- Non-negativity Constraint: x, y \\geq 0\n\nObjective:\n- Minimize the number of stores open: Minimize x + y", "expert": "Parameter Extractor"}

@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n1. x: Number of cars\n2. y: Number of buses\n\nConstraints:\n1. 4x + 20y \\geq 300\n2. y \\leq 4\n\nObjective:\nMinimize 10x + 30y", "expert": "Parameter Extractor"}

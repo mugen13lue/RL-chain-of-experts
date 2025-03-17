@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of bananas consumed\n- y: number of mangoes consumed\n\nExtracted Constraints:\n- Calories: 80x + 100y \\geq 4000\n- Potassium: 20x + 15y \\geq 150\n- Sugar: 10x + 8y \\leq S\n- MangoPercentage: y \\leq 0.33(x + y)\n\nExtracted Objective:\n- Minimize sugar intake: Minimize 10x + 8y", "expert": "Parameter Extractor"}

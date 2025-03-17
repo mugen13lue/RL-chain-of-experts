@@ -1,0 +1,33 @@
+from gurobipy import *
+
+def prob_16(z_tube, soorchle, wassa):
+    """
+    Args:
+        z_tube: an integer representing the number of advertisements on z-tube
+        soorchle: an integer representing the number of advertisements on soorchle
+        wassa: an integer representing the number of advertisements on wassa
+
+    Returns:
+        obj: an integer representing the maximized total audience
+    """
+    m = Model("advertisement_optimization")
+
+    # Variables
+    x = m.addVar(vtype=GRB.INTEGER, name="x")  # number of ads on z-tube
+    y = m.addVar(vtype=GRB.INTEGER, name="y")  # number of ads on soorchle
+    z = m.addVar(vtype=GRB.INTEGER, name="z")  # number of ads on wassa
+
+    # Constraints
+    m.addConstr(1000*x + 200*y + 100*z <= 10000, "budget_constraint")
+    m.addConstr(x >= 0.05*(x + y + z), "viewer_constraint_z_tube")
+    m.addConstr(z <= 0.33*(x + y + z), "viewer_constraint_wassa")
+    m.addConstr(y <= 15, "limit_soorchle_ads")
+
+    # Objective
+    m.setObjective(400000*x + 5000*y + 3000*z, GRB.MAXIMIZE)
+
+    m.optimize()
+
+    obj = int(m.objVal)
+
+    return obj

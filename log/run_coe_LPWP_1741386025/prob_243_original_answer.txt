@@ -1,0 +1,21 @@
+```python
+from scipy.optimize import linprog
+
+def prob_243(original_meal, experimental_meal):
+    """
+    Args:
+        original_meal: an integer representing the number of original meals
+        experimental_meal: an integer representing the number of experimental meals
+    Returns:
+        obj: an integer representing the objective value, i.e., the minimized cooking time
+    """
+    c = [10, 15]  # Coefficients of the objective function to minimize cooking time
+    A = [[20, 25], [45, 35]]  # Coefficients of the constraints
+    b = [800, 900]  # Right-hand side of the constraints
+    bounds = [(0, None), (0, None)]  # Bounds for variables x and y
+
+    res = linprog(c, A_ub=A, b_ub=b, bounds=bounds, method='highs')
+
+    return int(res.fun)  # Return the minimized cooking time
+```
+```

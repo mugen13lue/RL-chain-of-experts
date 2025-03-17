@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of large cruise ship trips and y be the number of small cruise ship trips, both integers\",\n    \"CONSTRAINTS\": \"2000x + 800y \\geq 20000, x \\leq 7, y \\geq 0.4(x+y)\",\n    \"OBJECTIVE\": \"Minimize total pollution produced: 20x + 15y\"\n}", "expert": "Modeling Expert"}

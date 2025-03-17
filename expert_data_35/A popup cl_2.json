@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- Let x be the number of spit tests administered.\n- Let y be the number of swab tests administered.\n\nExtracted Constraints:\n- Time Constraint: 10x + 15y \\leq 8000\n- Spit Test Constraint: x \\geq 2y\n- Swab Test Constraint: y \\geq 20\n\nExtracted Objective:\n- Maximize Z = x + y", "expert": "Parameter Extractor"}

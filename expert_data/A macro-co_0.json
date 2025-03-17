@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of bowls of salmon and y be the number of bowls of eggs.\",\n    \"CONSTRAINTS\": {\n        \"Calories\": \"300x + 200y \\geq 2000\",\n        \"Protein\": \"15x + 8y \\geq 90\",\n        \"Sodium\": \"80x + 20y \\leq S\"\n    },\n    \"OBJECTIVE\": \"Minimize S (sodium intake)\"\n}", "expert": "Modeling Expert"}

@@ -1,0 +1,1 @@
+{"comment": "Variables:\n- x: number of regular batches\n- y: number of premium batches\n\nConstraints:\n- Medicinal_Ingredients: 50x + 40y \\leq 3000\n- Rehydration_Product: 40x + 60y \\leq 3500\n- Regular_Batches_Minimum: x \\geq 10\n- Regular_Batches_Less_Than_Premium: x \\leq y\n\nObjective:\n- Maximize 50x + 30y", "expert": "Parameter Extractor"}

@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of small bones to be made, and y be the number of large bones to be made. Both x and y are non-negative integers.\",\n    \"CONSTRAINTS\": \"10x + 15y \\leq 2000, x \\geq 0, y \\geq 30, x + y \\geq 0.5(x + y)\",\n    \"OBJECTIVE\": \"Minimize Z = 12x + 15y\"\n}", "expert": "Modeling Expert"}

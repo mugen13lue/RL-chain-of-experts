@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of salads prepared and y be the number of fruit bowls prepared, both integers.\",\n    \"CONSTRAINTS\": \"7x + 15y \\geq 90, 12x + 3y \\geq 110, x \\geq 0, y \\geq 0, y \\leq 0.3x\",\n    \"OBJECTIVE\": \"Maximize 2x + 8y (potassium intake)\"\n}", "expert": "Modeling Expert"}

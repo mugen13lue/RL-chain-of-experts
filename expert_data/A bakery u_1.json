@@ -1,0 +1,1 @@
+{"comment": "Variables:\n- x: number of loaves of bread produced\n- y: number of batches of cookies produced\n\nConstraints:\n- Stand Mixer Hours: x + 0.5y \u2264 3000\n- Oven Hours: 3x + y \u2264 3000\n- Non-negativity: x \u2265 0, y \u2265 0\n\nObjective:\n- Maximize 5x + 3y", "expert": "Parameter Extractor"}

@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of desk-lamps to be made\n- y: number of night-lamps to be made\n\nExtracted Constraints:\n- x \\geq 30\n- y \\geq 50\n- x \\leq 150\n- y \\leq 180\n- x + y \\geq 100\n\nExtracted Objective:\n- Maximize profit: Maximize 5x + 8y", "expert": "Parameter Extractor"}

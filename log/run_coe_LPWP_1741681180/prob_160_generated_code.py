@@ -1,0 +1,35 @@
+import gurobipy as gp
+from gurobipy import GRB
+
+def prob_160(small_bouquets, large_bouquets):
+    """
+    Args:
+        small_bouquets: an integer, number of small bouquets
+        large_bouquets: an integer, number of large bouquets
+    Returns:
+        obj: an integer, number of flowers
+    """
+    # Create a new model
+    model = gp.Model("flower_transport")
+
+    # Decision variables
+    small = model.addVar(vtype=GRB.INTEGER, name="small")
+    large = model.addVar(vtype=GRB.INTEGER, name="large")
+
+    # Objective function: maximize total number of flowers
+    model.setObjective(5*small + 10*large, sense=GRB.MAXIMIZE)
+
+    # Constraints
+    model.addConstr(small <= 80, "small_limit")
+    model.addConstr(large <= 50, "large_limit")
+    model.addConstr(small + large <= 70, "total_limit")
+    model.addConstr(large >= 20, "large_min")
+    model.addConstr(small >= 2*large, "small_large_ratio")
+
+    # Optimize model
+    model.optimize()
+
+    # Get the optimal objective value
+    obj = int(model.objVal)
+
+    return obj

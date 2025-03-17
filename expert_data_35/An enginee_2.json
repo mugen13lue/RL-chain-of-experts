@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of beam bridges\n- y: number of truss bridges\n\nDefinitions:\n- x: the decision variable representing the number of beam bridges to be built by the team.\n- y: the decision variable representing the number of truss bridges to be built by the team.", "expert": "Parameter Extractor"}

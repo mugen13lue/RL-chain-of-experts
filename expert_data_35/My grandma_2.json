@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of pills of Zodiac\n- y: number of pills of Sunny\n\nDefinitions:\n- x: The decision variable representing the number of pills of Zodiac to be taken.\n- y: The decision variable representing the number of pills of Sunny to be taken.", "expert": "Parameter Extractor"}

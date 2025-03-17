@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of almond croissants\n- y: number of pistachio croissants\n\nDefinitions:\n- x: number of almond croissants to be made\n- y: number of pistachio croissants to be made", "expert": "Parameter Extractor"}

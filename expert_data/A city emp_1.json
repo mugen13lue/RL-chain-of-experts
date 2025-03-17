@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of seasonal snow removers\n- y: number of permanent snow removers\n\nDefinitions:\n- x: number of seasonal snow removers to be hired\n- y: number of permanent snow removers to be hired", "expert": "Parameter Extractor"}

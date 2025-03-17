@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of rural factories\n- y: number of urban factories\n\nDefinitions:\n- x represents the number of rural factories to be built.\n- y represents the number of urban factories to be built.", "expert": "Parameter Extractor"}

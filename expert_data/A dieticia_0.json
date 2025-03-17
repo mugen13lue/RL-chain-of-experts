@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of packs of blueberries and y be the number of packs of strawberries.\",\n    \"CONSTRAINTS\": {\n        \"Antioxidants\": \"3x + y \\geq 90\",\n        \"Minerals\": \"5x + 7y \\geq 100\",\n        \"Strawberries ratio\": \"y \\geq 3x\"\n    },\n    \"OBJECTIVE\": \"Minimize 5x + 7y\"\n}", "expert": "Modeling Expert"}

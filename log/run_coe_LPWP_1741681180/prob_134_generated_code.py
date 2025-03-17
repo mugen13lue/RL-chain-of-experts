@@ -1,0 +1,41 @@
+import gurobipy as gp
+from gurobipy import GRB
+
+def prob_134(cheesecake, caramel_cake, cheesecake_calories, cheesecake_sugar, caramel_cake_calories, caramel_cake_sugar, min_caramel_cake_slices, max_calories):
+    """
+    Args:
+        cheesecake: an integer, the number of slices of cheesecake
+        caramel_cake: an integer, the number of slices of caramel cake
+        cheesecake_calories: an integer, the calories in each slice of cheesecake
+        cheesecake_sugar: an integer, the sugar content in each slice of cheesecake
+        caramel_cake_calories: an integer, the calories in each slice of caramel cake
+        caramel_cake_sugar: an integer, the sugar content in each slice of caramel cake
+        min_caramel_cake_slices: an integer, the minimum number of slices of caramel cake to eat
+        max_calories: an integer, the maximum number of calories to consume in one day
+
+    Returns:
+        total_amount_of_sugar: an integer, the total amount of sugar consumed
+    """
+    model = gp.Model("cake_eating")
+
+    # Decision variables
+    cheesecake_slices = model.addVar(vtype=GRB.INTEGER, name="cheesecake_slices")
+    caramel_cake_slices = model.addVar(vtype=GRB.INTEGER, name="caramel_cake_slices")
+
+    # Objective function: maximize total sugar consumed
+    model.setObjective(cheesecake_sugar * cheesecake_slices + caramel_cake_sugar * caramel_cake_slices, sense=GRB.MAXIMIZE)
+
+    # Calories constraint
+    model.addConstr(cheesecake_calories * cheesecake_slices + caramel_cake_calories * caramel_cake_slices <= max_calories)
+
+    # Minimum number of caramel cake slices constraint
+    model.addConstr(caramel_cake_slices >= min_caramel_cake_slices)
+
+    # Cheesecake preference constraint
+    model.addConstr(cheesecake_slices >= 3 * caramel_cake_slices)
+
+    model.optimize()
+
+    total_amount_of_sugar = model.objVal
+
+    return total_amount_of_sugar

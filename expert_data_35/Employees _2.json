@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- \\( x \\): number of cars\n- \\( y \\): number of buses\n\nExtracted Constraints:\n- \\( 4x + 20y \\geq 300 \\) (At least 300 employees need to be transported)\n- \\( y \\leq 4 \\) (At most 4 buses can be used)\n\nExtracted Objective:\n- Minimize \\( 10x + 30y \\) (Minimize the total pollution produced)", "expert": "Parameter Extractor"}

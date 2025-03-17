@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of gummies to eat and y be the number of pills to take.\",\n    \"CONSTRAINTS\": \"3x + 2y \\leq 200, 4x + 5y \\leq \\text{Maximize} 4x + 5y, y \\geq 10, x \\geq 3y\",\n    \"OBJECTIVE\": \"Maximize 4x + 5y\"\n}", "expert": "Modeling Expert"}

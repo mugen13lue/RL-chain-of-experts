@@ -1,0 +1,32 @@
+from gurobipy import *
+
+def prob_43(Kebabs, Rice):
+    """
+    Args:
+        Kebabs: an integer, the number of servings of Kebabs
+        Rice: an integer, the number of servings of Rice
+        
+    Returns:
+        obj: a float, the value of the objective function (minimized cost)
+    """
+    # Create a new model
+    model = Model("diet_optimization")
+
+    # Define decision variables
+    x = model.addVar(vtype=GRB.INTEGER, name="Rice")
+    y = model.addVar(vtype=GRB.INTEGER, name="Kebab")
+
+    # Set objective function: minimize total cost
+    model.setObjective(3*x + 2*y, GRB.MINIMIZE)
+
+    # Add constraints
+    model.addConstr(300*x + 200*y >= 2200, "Calorie_constraint")
+    model.addConstr(4.5*x + 4*y >= 30, "Protein_constraint")
+
+    # Optimize model
+    model.optimize()
+
+    # Get the minimized cost
+    obj = model.objVal
+
+    return obj

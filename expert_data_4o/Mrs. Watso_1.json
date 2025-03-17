@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the amount invested in condos and y be the amount invested in detached houses.\",\n    \"CONSTRAINTS\": [\n        \"x + y \\leq 760000\",\n        \"0.2x \\leq x\",\n        \"y \\geq 20000\"\n    ],\n    \"OBJECTIVE\": \"Maximize 0.5x + y\"\n}", "expert": "Modeling Expert"}

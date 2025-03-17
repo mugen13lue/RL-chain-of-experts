@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the quantity of banana-haters packages and y be the quantity of combo packages\",\n    \"CONSTRAINTS\": [\n        \"6x \\leq 10\",\n        \"30x \\leq 80\",\n        \"5y \\leq 10\",\n        \"6y \\leq 20\",\n        \"20y \\leq 80\"\n    ],\n    \"OBJECTIVE\": \"Maximize 6x + 7y\"\n}", "expert": "Modeling Expert"}

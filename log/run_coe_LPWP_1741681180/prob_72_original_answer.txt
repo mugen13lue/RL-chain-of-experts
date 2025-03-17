@@ -1,0 +1,15 @@
+```python
+def prob_72(small_branch, large_branch, constraint1, constraint2):
+    """
+    Args:
+        small_branch: an integer, the number of small branches
+        large_branch: an integer, the number of large branches
+        constraint1: an integer, the value of the first constraint
+        constraint2: an integer, the value of the second constraint
+    Returns:
+        obj_value: an integer, the objective value of the problem
+    """
+    obj_value = small_branch + large_branch  # Objective function: Minimize Z = x + y
+    return obj_value
+```
+In this final code, the objective function is to minimize the total number of branches needed, which is represented as Z = x + y, where x is the number of small branches and y is the number of large branches. The code takes the input of the number of small and large branches, as well as the values of the constraints, and returns the objective value of the problem.

@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of slices of cheesecake\n- y: number of slices of caramel cake\n\nExtracted Constraints:\n- x \\geq 3y\n- y \\geq 3\n- 200x + 250y \\leq 10000\n\nExtracted Objective:\n- Maximize 40x + 50y", "expert": "Parameter Extractor"}

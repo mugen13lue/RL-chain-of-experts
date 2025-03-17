@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of small teams and y be the number of large teams, both integers.\",\n    \"CONSTRAINS\": \"3x \\geq y, x \\geq 10, y \\geq 6, 3x + 5y \\leq 150\",\n    \"OBJECTIVE\": \"Maximize 50x + 80y\"\n}", "expert": "Modeling Expert"}

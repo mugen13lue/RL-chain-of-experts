@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x1: amount of money put on the basketball tournament\n- x2: amount of money put on the horse race\n- x3: amount of money put on the soccer game\n\nExtracted Constraints:\n- x1 + x2 + x3 = 100000\n- 0.5x1 + 0.25x2 + 0.1x3 \\leq 0.3 * 100000\n\nExtracted Objective:\n- Maximize 1.2x1 + 0.5x2 + 0.1x3", "expert": "Parameter Extractor"}

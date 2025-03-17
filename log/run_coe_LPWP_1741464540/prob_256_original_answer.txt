@@ -1,0 +1,22 @@
+```python
+from scipy.optimize import linprog
+
+def prob_256(trains, trams) -> int:
+    """
+    Args:
+        trains: Number of trains (an integer).
+        trams: Number of trams (an integer).
+
+    Returns:
+        obj: Total number of transportation units (an integer).
+    """
+    c = [1, 1]  # Coefficients of the objective function to minimize x + y
+    A = [[-120, -30], [0, -1], [-2, 1]]  # Coefficients of the inequality constraints
+    b = [-600, 0, 0]  # Right-hand side of the inequality constraints
+
+    res = linprog(c, A_ub=A, b_ub=b)
+    obj = res.fun  # Total number of transportation units required
+
+    return int(obj)
+```
+This code implements the optimization model for the given problem as discussed by the experts. It defines the objective function, constraints, and uses the `linprog` function from `scipy.optimize` to solve the linear programming problem and obtain the total number of transportation units required to transport at least 600 people per hour while minimizing the number of units.

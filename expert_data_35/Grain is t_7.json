@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of large bags and y be the number of tiny bags, both integers\",\n    \"CONSTRAINTS\": [\n        \"4x + 1.5y \\leq 110\",\n        \"x \\geq 2y\",\n        \"y \\geq 20\",\n        \"x, y \\geq 0\"\n    ],\n    \"OBJECTIVE\": \"Maximize 25x + 6y\"\n}", "expert": "Modeling Expert"}

@@ -1,0 +1,8 @@
+===============test sample 0===============
+Runtime Error
+prob_287() got an unexpected keyword argument 'type_II_ambulance'
+
+
+
+0/1 passed
+is correct: False

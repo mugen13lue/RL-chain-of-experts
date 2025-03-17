@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of large pills\n- y: number of small pills\n\nExtracted Constraints:\n- Medicinal Ingredients: 3x + 2y \\leq 1000\n- Filler Material: 2x + y \\leq 1000\n- Minimum Large Pills: x \\geq 100\n- Minimum Small Pills: y \\geq 0.6(x + y)\n\nExtracted Objective:\n- Minimize filler material: minimize 2x + y", "expert": "Parameter Extractor"}

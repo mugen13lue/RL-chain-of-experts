@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of light grilled cheese sandwiches and y be the number of heavy grilled cheese sandwiches, both integers\",\n    \"CONSTRAINTS\": \"2x + 3y \\leq 300, 3x + 5y \\leq 500, y \\geq 3x\",\n    \"OBJECTIVE\": \"Minimize 10x + 15y (total production time)\"\n}", "expert": "Modeling Expert"}

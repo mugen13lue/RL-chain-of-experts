@@ -1,0 +1,17 @@
+from scipy.optimize import linprog
+
+def prob_117(burgers, pizza):
+    """
+    Args:
+        burgers: an integer, the number of burgers
+        pizza: an integer, the number of pizza slices
+    Returns:
+        obj: an integer, the objective value (cholesterol intake)
+    """
+    c = [0, 0, 1]  # Coefficients for the objective function [0, 0, 1] to minimize M
+    A = [[-10, -8, 0], [-300, -250, 0], [12, 10, -1]]  # Coefficients for the constraints
+    b = [-130, -3000, 0]  # Right-hand side of the constraints
+
+    res = linprog(c, A_ub=A, b_ub=b, bounds=(0, None))
+
+    return res.fun

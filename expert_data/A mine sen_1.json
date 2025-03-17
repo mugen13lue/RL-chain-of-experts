@@ -1,0 +1,1 @@
+{"comment": "Variables:\n- x: number of small wagons\n- y: number of large wagons\n\nConstraints:\n- x \\geq 2y\n- y \\geq 10\n- 20x + 50y = 2000\n\nObjective:\n- Minimize Z = x + y", "expert": "Parameter Extractor"}

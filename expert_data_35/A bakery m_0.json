@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of almond croissants and y be the number of pistachio croissants.\",\n    \"CONSTRAINTS\": {\n        \"Butter\": \"5x + 3y \\leq 600\",\n        \"Flour\": \"8x + 6y \\leq 800\",\n        \"Almond Ratio\": \"x \\geq 3y\"\n    },\n    \"OBJECTIVE\": \"Minimize 12x + 10y\"\n}", "expert": "Modeling Expert"}

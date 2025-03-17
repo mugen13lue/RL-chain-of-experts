@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of large pizzas\n- y: number of medium pizzas\n\nExtracted Constraints:\n- Dough: 12x + 8y \\geq 10000\n- Toppings: 5x + 4y \\geq 4400\n- Medium Pizzas: y \\geq 200\n- Large Pizzas: x \\geq 2y\n\nExtracted Objective:\n- Minimize the total baking time: 12x + 8y", "expert": "Parameter Extractor"}

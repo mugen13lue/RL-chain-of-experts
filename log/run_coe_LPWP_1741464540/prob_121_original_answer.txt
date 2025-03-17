@@ -1,0 +1,19 @@
+```python
+from scipy.optimize import linprog
+
+def prob_121(x, y):
+    """
+    Args:
+        x: an integer, the number of packs of ramen
+        y: an integer, the number of packs of fries
+    Returns:
+        obj: an integer, the value of the objective function
+    """
+    c = [100, 75]  # Coefficients for the objective function (sodium intake)
+    A = [[-400, -300], [-20, -10], [1, 0], [-1, 0]]  # Coefficients for the inequality constraints
+    b = [-3000, -80, 0, 0]  # Right-hand side values for the inequality constraints
+    bounds = [(0, None), (0, None)]  # Bounds for the variables (non-negative)
+
+    res = linprog(c, A_ub=A, b_ub=b, bounds=bounds, method='highs')
+    return res.fun
+```

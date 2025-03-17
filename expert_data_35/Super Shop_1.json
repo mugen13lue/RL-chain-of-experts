@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: kg of the first mix\n- y: kg of the second mix\n\nDefinitions:\n- x: the amount of the first mix (20% cat paw snacks and 80% gold shark snacks) to be prepared\n- y: the amount of the second mix (35% cat paw snacks and 65% gold shark snacks) to be prepared", "expert": "Parameter Extractor"}

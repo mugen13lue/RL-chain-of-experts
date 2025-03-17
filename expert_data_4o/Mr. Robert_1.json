@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the amount invested in healthcare and y be the amount invested in telecom. Both x and y are non-negative integers.\",\n    \"CONSTRAINTS\": \"x + y = 100000, y \\geq 3x, y \\leq 70000\",\n    \"OBJECTIVE\": \"Maximize profit = 0.01x + 0.03y\"\n}", "expert": "Modeling Expert"}

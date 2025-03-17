@@ -1,0 +1,20 @@
+```python
+from scipy.optimize import linprog
+
+def prob_67(gas, electric):
+    """
+    Args:
+        gas: an integer, number of gas grills
+        electric: an integer, number of electric grills
+    Returns:
+        gas: an integer, number of gas grills to be bought
+        electric: an integer, number of electric grills to be bought
+    """
+    c = [1, 1]  # Coefficients of the objective function to minimize Z = x + y
+    A = [[-20, -30], [-20, -25], [-1, 0], [0, -1], [1, -1]]  # Coefficients of the constraints
+    b = [-150, -140, 0, 0, 0]  # Right-hand side of the constraints
+
+    res = linprog(c, A_ub=A, b_ub=b, bounds=(0, None))
+    return int(res.x[0]), int(res.x[1])
+```
+This code defines the `prob_67` function that takes the number of gas grills and electric grills as input and returns the optimal number of each grill to be bought to minimize the total number of grills in the store while meeting the given constraints. The function uses the `linprog` function from the `scipy.optimize` module to solve the linear programming problem based on the objective function, constraints, and bounds provided by the experts.

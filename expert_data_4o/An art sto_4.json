@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x1 be the number of large art pieces and x2 be the number of small art pieces.\",\n    \"CONSTRAINTS\": \"4x1 + 2x2 \\leq 100, 3x1 + x2 \\leq 50, 5x1 + 2x2 \\leq 70, x1 \\geq 5, x2 \\geq 5\",\n    \"OBJECTIVE\": \"Maximize 30x1 + 15x2\"\n}", "expert": "Modeling Expert"}

@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of motion activated machines and y be the number of manual machines, both integers.\",\n    \"CONSTRAINTS\": [\n        \"x \\geq 3\",\n        \"y \\leq 0.4(x+y)\",\n        \"50x + 75y \\geq 1000\",\n        \"30x + 20y \\leq 500\"\n    ],\n    \"OBJECTIVE\": \"Minimize Z = x + y\"\n}", "expert": "Modeling Expert"}

@@ -1,0 +1,20 @@
+from scipy.optimize import linprog
+
+def prob_74(with_a_catalyst, without_a_catalyst):
+    """
+    Args:
+        with_a_catalyst: an integer (number of process with a catalyst),
+        without_a_catalyst: an integer (number of process without a catalyst),
+
+    Returns:
+        obj: an integer (amount of carbon dioxide produced),
+    """
+    c = [15, 18]  # Coefficients of the objective function to be maximized (15x + 18y)
+    A = [[10, 15], [20, 12]]  # Coefficients of the constraints
+    b = [300, 300]  # Right-hand side of the constraints
+    bounds = [(0, None), (0, None)]  # Bounds for x and y (non-negativity)
+
+    res = linprog(c, A_ub=A, b_ub=b, bounds=bounds, method='highs')
+    obj = res.fun  # Maximum amount of carbon dioxide produced
+
+    return obj

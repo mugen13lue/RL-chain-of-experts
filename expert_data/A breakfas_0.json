@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of regular sandwiches made and y be the number of special sandwiches made.\",\n    \"CONSTRAINTS\": {\n        \"Eggs\": \"2x + 3y \\leq 40\",\n        \"Bacon\": \"3x + 5y \\leq 70\",\n        \"Non-negativity\": \"x \\geq 0, y \\geq 0\"\n    },\n    \"OBJECTIVE\": \"Maximize 3x + 4y\"\n}", "expert": "Modeling Expert"}

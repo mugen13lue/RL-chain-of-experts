@@ -1,0 +1,8 @@
+===============test sample 0===============
+Runtime Error
+Unable to retrieve attribute 'objVal'
+
+
+
+0/1 passed
+is correct: False

@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of premium printers and y be the number of regular printers.\",\n    \"CONSTRAINTS\": [\n        \"30x + 20y \\geq 200\",\n        \"4x + 3y \\leq 35\",\n        \"y \\leq x\",\n        \"x, y \\geq 0\"\n    ],\n    \"OBJECTIVE\": \"Minimize Z = x + y\"\n}", "expert": "Modeling Expert"}

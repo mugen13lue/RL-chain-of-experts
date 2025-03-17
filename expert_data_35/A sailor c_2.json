@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- Let x be the number of crab cakes eaten\n- Let y be the number of lobster rolls eaten\n\nExtracted Constraints:\n- Vitamin A: 5x + 8y \\geq 80\n- Vitamin C: 7x + 4y \\geq 100\n- Lobster Roll Limit: y \\leq 0.4(x+y)\n\nExtracted Objective:\n- Minimize unsaturated fat: 4x + 6y", "expert": "Parameter Extractor"}

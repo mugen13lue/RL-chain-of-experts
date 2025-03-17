@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of math workbooks and y be the number of English workbooks, both integers.\",\n    \"CONSTRAINS\": [\n        \"x \\geq 40\",\n        \"y \\geq 60\",\n        \"x \\leq 140\",\n        \"y \\leq 170\",\n        \"x + y \\geq 200\"\n    ],\n    \"OBJECTIVE\": \"Maximize 15x + 17y\"\n}", "expert": "Modeling Expert"}

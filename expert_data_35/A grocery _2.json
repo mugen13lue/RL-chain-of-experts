@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- \\( x \\): number of banana-haters packages to prepare\n- \\( y \\): number of combo packages to prepare\n\nDefinitions:\n- \\( x \\): represents the quantity of banana-haters packages that the store will prepare\n- \\( y \\): represents the quantity of combo packages that the store will prepare", "expert": "Parameter Extractor"}

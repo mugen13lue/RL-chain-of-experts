@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of small jars and y be the number of large jars\",\n    \"CONSTRAINTS\": \"S * x + L * y \\geq M, y \\leq x\",\n    \"OBJECTIVE\": \"Minimize x + y\"\n}", "expert": "Modeling Expert"}

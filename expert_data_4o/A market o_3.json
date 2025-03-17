@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of sets of small packets\n- y: number of jugs\n\nExtracted Constraints:\n- x \\geq 35\n- y \\geq 3x\n- 1000x + 1250y \\leq 65000\n\nExtracted Objective:\n- Maximize z = x + y", "expert": "Parameter Extractor"}

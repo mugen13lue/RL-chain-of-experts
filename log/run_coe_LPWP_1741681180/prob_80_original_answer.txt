@@ -1,0 +1,25 @@
+```python
+from scipy.optimize import linprog
+
+def prob_80(regular, emergency_fire):
+    """
+    Args:
+        regular: an integer, representing the number of regular fire fighters.
+        emergency_fire: an integer, representing the number of emergency fire fighters.
+    
+    Returns:
+        obj: an integer, representing the minimum total cost of hiring fire fighters.
+    """
+    
+    c = [300, 100]  # Coefficients of the objective function to minimize the total cost
+    
+    A = [[-10, -6], [300, 100]]  # Coefficients of the inequality constraints
+    b = [-300, 7000]  # Right-hand side of the inequality constraints
+    
+    bounds = [(0, None), (0, None)]  # Bounds for x and y
+    
+    res = linprog(c, A_ub=A, b_ub=b, bounds=bounds, method='highs')
+    
+    return int(res.fun)
+```
+This code defines the `prob_80` function that calculates the minimum total cost of hiring fire fighters based on the number of regular and emergency fire fighters hired, while meeting the constraints related to total hours and budget. The objective function has been updated to minimize the total cost as required by the problem statement. The function utilizes the `linprog` function from `scipy.optimize` to solve the linear programming problem efficiently.

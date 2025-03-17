@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of wired headphones produced per day and y be the number of wireless headphones produced per day, both integers\",\n    \"CONSTRAINS\": \"x \\leq 100, y \\leq 170, x + y \\leq 150, x \\geq 0, y \\geq 0\",\n    \"OBJECTIVE\": \"Maximize Profit = 50x + 20y\"\n}", "expert": "Modeling Expert"}

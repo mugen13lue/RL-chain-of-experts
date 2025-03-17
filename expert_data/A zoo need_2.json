@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of bus trips\n- y: number of car trips\n\nDefinitions:\n- x: number of times monkeys are transported by bus\n- y: number of times monkeys are transported by car", "expert": "Parameter Extractor"}

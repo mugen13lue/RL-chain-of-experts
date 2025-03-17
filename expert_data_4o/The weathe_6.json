@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of helicopter trips\n- y: number of car trips\n\nDefinitions:\n- x: Represents the number of helicopter trips taken to transport the fish.\n- y: Represents the number of car trips taken to transport the fish.", "expert": "Parameter Extractor"}

@@ -1,0 +1,39 @@
+```python
+import gurobipy as gp
+from gurobipy import GRB
+
+def prob_157(containers, trucks, Max_Trucks, Min_Oil_Units, Min_Containers):
+    """
+    Args:
+        containers: an integer, the number of containers used.
+        trucks: an integer, the number of trucks used.
+        Max_Trucks: an integer, maximum number of trucks allowed.
+        Min_Oil_Units: an integer, minimum number of oil units to be transported.
+        Min_Containers: an integer, minimum number of containers required.
+
+    Returns:
+        Total_Containers_Trucks: an integer, the minimum total number of containers and trucks needed.
+    """
+    m = gp.Model("oil_transportation")
+
+    # Decision variables
+    x = m.addVar(vtype=GRB.INTEGER, name="containers")
+    y = m.addVar(vtype=GRB.INTEGER, name="trucks")
+
+    # Constraints
+    m.addConstr(30*x + 40*y >= Min_Oil_Units, "oil_sent_constraint")
+    m.addConstr(x >= Min_Containers, "min_containers_constraint")
+    m.addConstr(y <= 0.5*x, "trucks_containers_ratio_constraint")
+    m.addConstr(y <= Max_Trucks, "max_trucks_constraint")
+
+    # Objective
+    m.setObjective(x + y, GRB.MINIMIZE)
+
+    # Optimize model
+    m.optimize()
+
+    Total_Containers_Trucks = m.objVal
+
+    return Total_Containers_Trucks
+```
+The final code optimizes the total number of containers and trucks needed to transport oil to the port based on the given constraints and objectives.

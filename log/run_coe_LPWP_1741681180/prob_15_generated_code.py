@@ -1,0 +1,36 @@
+import gurobipy as gp
+from gurobipy import GRB
+
+def prob_15(senior_citizens, young_adults):
+    """
+    Args:
+        senior_citizens: an integer representing the number of senior citizens employed by the store
+        young_adults: an integer representing the number of young adults employed by the store
+    Returns:
+        obj: an integer representing the minimized wage bill
+    """
+    obj = 0
+    
+    # Create a new model
+    model = gp.Model("minimize_wage_bill")
+    
+    # Define decision variables
+    x = model.addVar(lb=0, vtype=GRB.INTEGER, name="senior_citizens")
+    y = model.addVar(lb=0, vtype=GRB.INTEGER, name="young_adults")
+    
+    # Set objective function: minimize total wage bill
+    model.setObjective(500*x + 750*y, GRB.MINIMIZE)
+    
+    # Add constraints
+    model.addConstr(500*x + 750*y <= 30000, "total_wage_bill_constraint")
+    model.addConstr(x + y >= 50, "minimum_workers_constraint")
+    model.addConstr(y >= 10, "minimum_young_adults_constraint")
+    model.addConstr(y >= x/3, "young_adults_ratio_constraint")
+    
+    # Optimize the model
+    model.optimize()
+    
+    # Get the minimized wage bill
+    obj = model.objVal
+    
+    return obj

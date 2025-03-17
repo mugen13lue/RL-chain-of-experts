@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: Number of electric bikes used\n- y: Number of scooters used\n\nExtracted Constraints:\n- 3x + 2y <= 200\n- x <= 0.3(x + y)\n- x <= 30\n- y >= 20\n\nExtracted Objective:\n- Maximize 8x + 5y", "expert": "Parameter Extractor"}

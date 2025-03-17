@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of slices of cheesecake and y be the number of slices of caramel cake, both integers.\",\n    \"CONSTRAINTS\": \"The constraints are: x \\geq 3y, y \\geq 3, 200x + 250y \\leq 10000.\",\n    \"OBJECTIVE\": \"Maximize the total sugar consumed: maximize 40x + 50y.\"\n}", "expert": "Modeling Expert"}

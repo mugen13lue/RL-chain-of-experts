@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of scooters used and y be the number of rickshaws used, both integers.\",\n    \"CONSTRAINTS\": {\n        \"Number of visitors constraint\": \"2x + 3y \\geq 300\",\n        \"Rickshaw limit constraint\": \"y \\leq 0.4(x + y)\"\n    },\n    \"OBJECTIVE\": \"Minimize Z = x\"\n}", "expert": "Modeling Expert"}

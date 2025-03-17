@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: number of small bones\n- y: number of large bones\n\nExtracted Constraints:\n- Tooth Medication: 10x + 15y \\leq 2000\n- Meat for Small Bones: 12x \\leq M\n- Meat for Large Bones: 15y \\leq M\n- Minimum Small Bones: x \\geq 0.5(x+y)\n- Minimum Large Bones: y \\geq 30\n\nExtracted Objective:\n- Minimize M", "expert": "Parameter Extractor"}

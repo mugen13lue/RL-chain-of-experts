@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n1. x: Number of small containers\n2. y: Number of large containers\n\nDefinitions:\n- x is the number of small containers used for delivering sand.\n- y is the number of large containers used for delivering sand.", "expert": "Parameter Extractor"}

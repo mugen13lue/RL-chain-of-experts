@@ -1,0 +1,17 @@
+def prob_177(tractor, car, twice):
+    """
+    Args:
+        tractor: an integer, representing the number of tractors used
+        car: an integer, representing the number of cars used
+        twice: an integer, representing the minimum number of cars compared to tractors
+    Returns:
+        obj: an integer, representing the minimized total number of tractors and cars needed
+    """
+    obj = float('inf')
+    
+    for t in range(1, 13):  # Maximum number of tractors needed to reach 500 kg
+        for c in range(twice*t, 26):  # Minimum number of cars needed based on the constraint
+            if 40*t + 20*c >= 500:  # Check if total weight is at least 500 kg
+                obj = min(obj, t + c)  # Update the minimum total number of tractors and cars
+    
+    return obj

@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x: amount of fertilizer C in kg\n- y: amount of fertilizer Y in kg\n\nExtracted Constraints:\n- Nitrous Oxide: 1.5x + 5y \\geq 5\n- Vitamin Mix: 3x + y \\geq 8\n- Non-negativity: x \\geq 0, y \\geq 0\n\nExtracted Objective:\n- Minimize Cost: 2x + 3y", "expert": "Parameter Extractor"}

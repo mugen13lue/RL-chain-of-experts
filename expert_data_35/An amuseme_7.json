@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of throwing games and y be the number of climbing games.\",\n    \"CONSTRAINTS\": [\n        \"x \\geq 2y\",\n        \"y \\geq 5\",\n        \"2x + 3y \\leq 100\",\n        \"x, y \\geq 0\"\n    ],\n    \"OBJECTIVE\": \"Maximize 15x + 8y\"\n}", "expert": "Modeling Expert"}

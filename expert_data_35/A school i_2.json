@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- \\( x \\): number of small buses\n- \\( y \\): number of large buses\n\nExtracted Constraints:\n1. Transportation Capacity: \\( 20x + 50y \\geq 500 \\)\n2. Maximum Large Buses: \\( y \\leq 0.2(x + y) \\)\n3. Non-negativity: \\( x, y \\geq 0 \\)\n\nExtracted Objective:\nMinimize \\( Z = x + y \\)", "expert": "Parameter Extractor"}

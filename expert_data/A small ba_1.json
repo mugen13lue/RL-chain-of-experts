@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- x1: number of crepe cakes\n- x2: number of sponge cakes\n- x3: number of birthday cakes\n\nDefinitions:\n- x1, x2, x3 >= 0\n\nExtracted Constraints:\n- 400x1 + 500x2 + 450x3 <= 20000 (Batter constraint)\n- 200x1 + 300x2 + 350x3 <= 14000 (Milk constraint)\n\nExtracted Objective:\n- Maximize 12x1 + 10x2 + 15x3", "expert": "Parameter Extractor"}

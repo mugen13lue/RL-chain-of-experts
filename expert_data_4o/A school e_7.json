@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of staff teachers to be hired and y be the number of substitute teachers to be hired, both integers.\",\n    \"CONSTRAINTS\": \"6x + 3y \\geq 1000, 300x + 100y \\leq 40000\",\n    \"OBJECTIVE\": \"Minimize z = x + y\"\n}", "expert": "Modeling Expert"}

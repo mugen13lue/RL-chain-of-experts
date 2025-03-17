@@ -1,0 +1,13 @@
+```python
+from scipy.optimize import linprog
+
+def prob_188():
+    c = [1, 0]  # Coefficients for the objective function to minimize x
+    A = [[1, 1], [0, 1], [-0.6, -0.6]]  # Coefficients for the constraints
+    b = [500, 30, 0]  # Right-hand side of the constraints
+
+    res = linprog(c, A_ub=A, b_ub=b, bounds=(0, None))
+
+    return int(res.x[0])  # Return the minimized total number of taxi rides
+```
+This code snippet uses linear programming to solve the optimization problem of minimizing the total number of taxi rides while satisfying the given constraints. The objective function minimizes the number of taxi rides, and the constraints ensure the total number of employees to transport, the minimum number of company car rides, and the limit on the percentage of company car rides. The function returns the minimized total number of taxi rides.

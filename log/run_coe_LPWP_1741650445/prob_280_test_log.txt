@@ -1,0 +1,8 @@
+===============test sample 0===============
+Runtime Error
+unsupported operand type(s) for -: 'Var' and 'NoneType'
+
+
+
+0/1 passed
+is correct: False

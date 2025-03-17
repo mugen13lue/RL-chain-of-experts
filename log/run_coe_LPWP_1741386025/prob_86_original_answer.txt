@@ -1,0 +1,15 @@
+```python
+def prob_86(mocha_coffee_powder, mocha_milk, regular_coffee_powder, regular_milk, mocha_time, regular_time,
+            mocha_regular_ratio, coffee_powder_limit, milk_limit):
+    
+    from scipy.optimize import linprog
+
+    c = [mocha_time, regular_time]
+    A = [[mocha_coffee_powder, regular_coffee_powder], [mocha_milk, regular_milk], [-1, 3]]
+    b = [coffee_powder_limit, milk_limit, 0]
+
+    res = linprog(c, A_ub=A, b_ub=b)
+    
+    return res.fun
+```
+The final code provided above incorporates the insights and comments from various experts, including the modeling of variables, constraints, and objective function, as well as the implementation details using the `linprog` function from `scipy.optimize`. This code is designed to solve the given problem of minimizing the total production time by determining the optimal number of mochas and regular coffees to make.

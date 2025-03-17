@@ -1,0 +1,1 @@
+{"comment": "{\n    \"VARIABLES\": \"Let x be the number of low-powered air conditioners and y be the number of high-powered air conditioners.\",\n    \"CONSTRAINTS\": \"12x + 17y \\geq 250, 150x + 250y \\leq 3400, x \\leq 0.3(x + y), y \\geq 7\",\n    \"OBJECTIVE\": \"Minimize the total number of air conditioners: x + y\"\n}", "expert": "Modeling Expert"}

@@ -1,0 +1,1 @@
+{"comment": "Extracted Variables:\n- Let x be the number of buses\n- Let y be the number of personal cars\n\nExtracted Constraints:\n- Total number of children: 9x + 4y \\geq 100\n- More buses than personal cars: x \\geq 5\n- Non-negativity: x, y \\geq 0\n\nExtracted Objective:\n- Minimize Z = x + y", "expert": "Parameter Extractor"}
